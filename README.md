@@ -8,4 +8,8 @@
 |성훈|간단한 주가 선 차트 및 예상배당금|mo_main|
 |승민|과거 배당금 내역 & 배당률, 1p 초기 검색창|mo_divide_history,mo_search_bar|
 
+|mo_search_bar|
+|Enterprise[200]|
+
+
 
