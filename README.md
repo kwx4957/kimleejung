@@ -9,6 +9,7 @@
 |승민|과거 배당금 내역 & 배당률, 1p 초기 검색창|mo_divide_history,mo_search_bar|
 
 |mo_search_bar|
+|--------------|
 |Enterprise[200]|
 
 
