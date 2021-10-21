@@ -25,7 +25,7 @@ https://dev-josh.tistory.com/26?category=819607
 |mo_ex_divide|
 |기능|변수명|
 |----|-------|
-|보유주식 수 입력 | get_holdstock|
+|보유주식 수 입력 | set_holdstock|
 |계산된 예상 배당금 | ex_divide_multil|
 |예상 배당률| ex_divide_yeild|
 |배당금 지급일 | ex_pay_Dates|
