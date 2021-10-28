@@ -1,8 +1,20 @@
 # 김이정 프로젝트
 ---- 
 # 1. 김이정 프로젝트를 시작한 이유
-# 2. 실행방법
+
+# 2. 개발환경
+1. Node.js , Vscode 설치
+* [Node.js]["https://nodejs.org/ko/download/"] 16.13.0
+* [VSC]["https://code.visualstudio.com/download"]
+2. 디렉토리 생성
+3. 리액트 앱 생성
+* 해당 디렉토리 터미널에서 npx create-react-app "프로젝트명" 실행 
+4. 리액트 앱 구동
+* npm start 
+* localhost:3000 확인
+
 # 3. API 호출 
+https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15043284
 
 https://dev-josh.tistory.com/26?category=819607
 ## 상세설계 1
