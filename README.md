@@ -13,7 +13,7 @@
 * npm start 
 * npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 * rename src/index.js to src/index.tsx 빌드 발생 시 에러가 발생한다면 이를 수정하고 아닐 경우에는 개발을 진행한다. 
-* 
+* npm start 
 * localhost:3000 확인
 
 >https://create-react-app.dev/docs/adding-typescript/
