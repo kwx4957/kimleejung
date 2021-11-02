@@ -11,8 +11,11 @@
 * 해당 디렉토리 터미널에서 npx create-react-app "프로젝트명" 실행 
 4. 리액트 앱 구동
 * npm start 
+* npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+* rename src/index.js to src/index.tsx 빌드 발생 시 에러가 발생한다면 이를 수정하고 아닐 경우에는 개발을 진행한다. 
 * localhost:3000 확인
 
+>https://create-react-app.dev/docs/adding-typescript/
 # 3. API 호출 
 https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15043284
 
