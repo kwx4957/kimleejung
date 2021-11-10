@@ -30,6 +30,11 @@ text-align: center;
   width: 350px;
 }
 
+.App-Search{
+  width: 700px;
+  height: 40px;
+  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

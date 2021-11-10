@@ -11,11 +11,11 @@ function App() {
     
     <img src="kimleejung_letterlogo.png" className="App-size"></img>
     
-    <img src="kimleejung_minilogo.png" className="App-logo">
-    
-    
-    </img>
-    
+    <a>
+    <img src="kimleejung_minilogo.png" className="App-logo"></img>
+    &nbsp;&nbsp;
+    <input type="text" className="App-Search"/>
+    </a>
     
 
     <br/><br/><br/><br/><br/><br/>
