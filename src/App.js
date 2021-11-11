@@ -6,16 +6,16 @@ function App() {
   
   return (
     <div className="App" className="App-header" >
-      
-    
-    
-    <img src="kimleejung_letterlogo.png" className="App-size"></img>
     
     <a>
     <img src="kimleejung_minilogo.png" className="App-logo"></img>
+    <img src="kimleejung_letterlogo.png" className="App-size"></img>
+    </a>
+   
+    
     &nbsp;&nbsp;
     <input type="text" className="App-Search"/>
-    </a>
+    
     
 
     <br/><br/><br/><br/><br/><br/>
