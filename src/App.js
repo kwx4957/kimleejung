@@ -13,8 +13,9 @@ function App() {
     </a>
    
     
+
     &nbsp;&nbsp;
-    <input type="text" className="App-Search"/>
+    <input type="text" className="App-Search" placeholder="  기업명을 입력하시오." font-style="italic"/>
     
     
 

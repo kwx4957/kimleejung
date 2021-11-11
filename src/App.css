@@ -33,7 +33,9 @@ text-align: center;
 .App-Search{
   width: 700px;
   height: 40px;
-  
+  border-width: 9px;
+  border-color: #50bcdf;
+  border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px; 
 }
 @keyframes App-logo-spin {
   from {
