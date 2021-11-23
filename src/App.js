@@ -14,7 +14,7 @@ function App() {
     <img src="kimleejung_letterlogo.png" className="App-size"></img>
     </a>
    
-    
+      
 
     &nbsp;&nbsp;
     <input type="text" className="App-Search" placeholder="  기업명을 입력하시오."/>
