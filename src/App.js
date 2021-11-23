@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import { type } from 'os';
+import Api from './Api';
 
 function App() {
   
   return (
     <div className="App" className="App-header" >
-    
+        <Api />
+
     <a>
     <img src="kimleejung_minilogo.png" className="App-logo"></img>
     <img src="kimleejung_letterlogo.png" className="App-size"></img>
