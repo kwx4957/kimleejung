@@ -10,19 +10,23 @@ function App() {
         <Api />
 
     <a>
+    {/*로고이미지*/}
     <img src="kimleejung_minilogo.png" className="App-logo"></img>
+    {/*로고명*/}
     <img src="kimleejung_letterlogo.png" className="App-size"></img>
     </a>
    
       
 
     &nbsp;&nbsp;
-    <input type="text" className="App-Search" placeholder="  기업명을 입력하시오."/>
+    {/*입력창*/}
+    <input type="search" className="App-Search" placeholder="  기업명을 입력하시오." name="Enterprise[i]"/>
+    
+
     
     
 
     <br/><br/><br/><br/><br/><br/>
-    
     </div>
   );
 }
