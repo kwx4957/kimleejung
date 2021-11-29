@@ -1,0 +1,802 @@
+[
+    {
+        "number" : "005930",
+        "company" : "삼성전자"
+    },
+    {
+        "number" : "000660",
+        "company" : "SK하이닉스"
+    },
+    {
+        "number" : "035420",
+        "company" : "네이버"
+    },
+    {
+        "number" : "207940",
+        "company" : "삼성바이오로직스"
+    },
+    {
+        "number" : "035720",
+        "company" : "카카오"
+    },
+    {
+        "number" : "051910",
+        "company" : "LG화학"
+    },
+    {
+        "number" : "006400",
+        "company" : "삼성SDI"
+    },
+    {
+        "number" : "005380",
+        "company" : "현대차"
+    },
+    {
+        "number" : "323410",
+        "company" : "카카오뱅크"
+    },
+    {
+        "number" : "000270",
+        "company" : "기아"
+    },
+    {
+        "number" : "068270",
+        "company" : "셀트리온"
+    },
+    {
+        "number" : "259960",
+        "company" : "크래프톤"
+    },
+    {
+        "number" : "005490",
+        "company" : "POSCO"
+    },
+    {
+        "number" : "105560",
+        "company" : "KB금융"
+    },
+    {
+        "number" : "012330",
+        "company" : "현대모비스"
+    },
+    {
+        "number" : "302440",
+        "company" : "SK바이오사이언스"
+    },
+    {
+        "number" : "028260",
+        "company" : "삼성물산"
+    },
+    {
+        "number" : "066570",
+        "company" : "LG전자"
+    },
+    {
+        "number" : "096770",
+        "company" : "SK이노베이션"
+    },
+    {
+        "number" : "055550",
+        "company" : "신한지주"
+    },
+    {
+        "number" : "034730",
+        "company" : "SK"
+    },
+    {
+        "number" : "051900",
+        "company" : "LG생활건강"
+    },
+    {
+        "number" : "036570",
+        "company" : "엔씨소프트"
+    },
+    {
+        "number" : "352820",
+        "company" : "하이브"
+    },
+    {
+        "number" : "015760",
+        "company" : "한국전력"
+    },
+    {
+        "number" : "003550",
+        "company" : "LG"
+    },
+    {
+        "number" : "009150",
+        "company" : "삼성전기"
+    },
+    {
+        "number" : "017670",
+        "company" : "SK텔레콤"
+    },
+    {
+        "number" : "032830",
+        "company" : "삼성생명"
+    },
+    {
+        "number" : "086790",
+        "company" : "하나금융지주"
+    },
+    {
+        "number" : "011200",
+        "company" : "HMM"
+    },
+    {
+        "number" : "003670",
+        "company" : "포스코케미칼"
+    },
+    {
+        "number" : "361610",
+        "company" : "SK아이이테크놀로지"
+    },
+    {
+        "number" : "018260",
+        "company" : "삼성에스디에스"
+    },
+    {
+        "number" : "033780",
+        "company" : "KT&G"
+    },
+    {
+        "number" : "034020",
+        "company" : "두산중공업"
+    },
+    {
+        "number" : "251270",
+        "company" : "넷마블"
+    },
+    {
+        "number" : "000810",
+        "company" : "삼성화재"
+    },
+    {
+        "number" : "090430",
+        "company" : "아모레퍼시픽"
+    },
+    {
+        "number" : "010130",
+        "company" : "고려아연"
+    },
+    {
+        "number" : "010950",
+        "company" : "S-Oil"
+    },
+    {
+        "number" : "316140",
+        "company" : "우리금융지주"
+    },
+    {
+        "number" : "003490",
+        "company" : "대한항공"
+    },
+    {
+        "number" : "030200",
+        "company" : "KT"
+    },
+    {
+        "number" : "024110",
+        "company" : "기업은행"
+    },
+    {
+        "number" : "011790",
+        "company" : "SKC"
+    },
+    {
+        "number" : "326030",
+        "company" : "SK바이오팜"
+    },
+    {
+        "number" : "034220",
+        "company" : "LG디스플레이"
+    },
+    {
+        "number" : "018880",
+        "company" : "한온시스템"
+    },
+    {
+        "number" : "011070",
+        "company" : "LG이노텍"
+    },
+    {
+        "number" : "011170",
+        "company" : "롯데케미칼"
+    },
+    {
+        "number" : "009540",
+        "company" : "한국조선해양"
+    },
+    {
+        "number" : "020150",
+        "company" : "일진머티리얼즈"
+    },
+    {
+        "number" : "009830",
+        "company" : "한화솔루션"
+    },
+    {
+        "number" : "032640",
+        "company" : "LG유플러스"
+    },
+    {
+        "number" : "086280",
+        "company" : "현대글로비스"
+    },
+    {
+        "number" : "006800",
+        "company" : "미래에셋증권"
+    },
+    {
+        "number" : "097950",
+        "company" : "CJ제일제당"
+    },
+    {
+        "number" : "021240",
+        "company" : "코웨이"
+    },
+    {
+        "number" : "004020",
+        "company" : "현대제철"
+    },
+    {
+        "number" : "000720",
+        "company" : "현대건설"
+    },
+    {
+        "number" : "035250",
+        "company" : "강원랜드"
+    },
+    {
+        "number" : "011780",
+        "company" : "금호석유"
+    },
+    {
+        "number" : "161390",
+        "company" : "한국타이어앤테크놀로지"
+    },
+    {
+        "number" : "010140",
+        "company" : "삼성중공업"
+    },
+    {
+        "number" : "071050",
+        "company" : "한국금융지주"
+    },
+    {
+        "number" : "267250",
+        "company" : "현대중공업지주"
+    },
+    {
+        "number" : "028050",
+        "company" : "삼성엔지니어링"
+    },
+    {
+        "number" : "139480",
+        "company" : "이마트"
+    },
+    {
+        "number" : "000100",
+        "company" : "유한양행"
+    },
+    {
+        "number" : "271560",
+        "company" : "오리온"
+    },
+    {
+        "number" : "016360",
+        "company" : "삼성증권"
+    },
+    {
+        "number" : "029780",
+        "company" : "삼성카드"
+    },
+    {
+        "number" : "005830",
+        "company" : "DB손해보험"
+    },
+    {
+        "number" : "003410",
+        "company" : "쌍용C&E"
+    },
+    {
+        "number" : "005940",
+        "company" : "NH투자증권"
+    },
+    {
+        "number" : "241560",
+        "company" : "두산밥캣"
+    },
+    {
+        "number" : "078930",
+        "company" : "GS"
+    },
+    {
+        "number" : "008930",
+        "company" : "한미사이언스"
+    },
+    {
+        "number" : "002790",
+        "company" : "아모레G"
+    },
+    {
+        "number" : "014680",
+        "company" : "한솔케미칼"
+    },
+    {
+        "number" : "180640",
+        "company" : "한진칼"
+    },
+    {
+        "number" : "008560",
+        "company" : "메리츠증권"
+    },
+    {
+        "number" : "036460",
+        "company" : "한국가스공사"
+    },
+    {
+        "number" : "000990",
+        "company" : "DB하이텍"
+    },
+    {
+        "number" : "026960",
+        "company" : "동서"
+    },
+    {
+        "number" : "052690",
+        "company" : "한전기술"
+    },
+    {
+        "number" : "006360",
+        "company" : "GS건설"
+    },
+    {
+        "number" : "336260",
+        "company" : "두산퓨얼셀"
+    },
+    {
+        "number" : "004990",
+        "company" : "롯데지주"
+    },
+    {
+        "number" : "128940",
+        "company" : "한미약품"
+    },
+    {
+        "number" : "007070",
+        "company" : "GS리테일"
+    },
+    {
+        "number" : "000120",
+        "company" : "CJ대한통운"
+    },
+    {
+        "number" : "010620",
+        "company" : "현대미포조선"
+    },
+    {
+        "number" : "028670",
+        "company" : "팬오션"
+    },
+    {
+        "number" : "012750",
+        "company" : "에스원"
+    },
+    {
+        "number" : "008770",
+        "company" : "호텔신라"
+    },
+    {
+        "number" : "047810",
+        "company" : "한국항공우주"
+    },
+    {
+        "number" : "272210",
+        "company" : "한화시스템"
+    },
+    {
+        "number" : "298050",
+        "company" : "효성첨단소재"
+    },
+    {
+        "number" : "138930",
+        "company" : "BNK금융지주"
+    },
+    {
+        "number" : "039490",
+        "company" : "키움증권"
+    },
+    {
+        "number" : "010060",
+        "company" : "OCI"
+    },
+    {
+        "number" : "204320",
+        "company" : "만도"
+    },
+    {
+        "number" : "006280",
+        "company" : "녹십자"
+    },
+    {
+        "number" : "088350",
+        "company" : "한화생명"
+    },
+    {
+        "number" : "285130",
+        "company" : "SK케미칼"
+    },
+    {
+        "number" : "030000",
+        "company" : "제일기획"
+    },
+    {
+        "number" : "282330",
+        "company" : "BGF리테일"
+    },
+    {
+        "number" : "042660",
+        "company" : "대우조선해양"
+    },
+    {
+        "number" : "002380",
+        "company" : "KCC"
+    },
+    {
+        "number" : "023530",
+        "company" : "롯데쇼핑"
+    },
+    {
+        "number" : "112610",
+        "company" : "씨에스윈드"
+    },
+    {
+        "number" : "047050",
+        "company" : "포스코인터내셔널"
+    },
+    {
+        "number" : "001040",
+        "company" : "CJ"
+    },
+    {
+        "number" : "000880",
+        "company" : "한화"
+    },
+    {
+        "number" : "047040",
+        "company" : "대우건설"
+    },
+    {
+        "number" : "093370",
+        "company" : "후성"
+    },
+    {
+        "number" : "298020",
+        "company" : "효성티앤씨"
+    },
+    {
+        "number" : "375500",
+        "company" : "DL이앤씨"
+    },
+    {
+        "number" : "001450",
+        "company" : "현대해상"
+    },
+    {
+        "number" : "064350",
+        "company" : "현대로템"
+    },
+    {
+        "number" : "012450",
+        "company" : "한화에어로스페이스"
+    },
+    {
+        "number" : "000080",
+        "company" : "하이트진로"
+    },
+    {
+        "number" : "004170",
+        "company" : "신세계"
+    },
+    {
+        "number" : "081660",
+        "company" : "휠라홀딩스"
+    },
+    {
+        "number" : "004000",
+        "company" : "롯데정밀화학"
+    },
+    {
+        "number" : "009240",
+        "company" : "한샘"
+    },
+    {
+        "number" : "120110",
+        "company" : "코오롱인더"
+    },
+    {
+        "number" : "004800",
+        "company" : "효성"
+    },
+    {
+        "number" : "011210",
+        "company" : "현대위아"
+    },
+    {
+        "number" : "003090",
+        "company" : "대웅"
+    },
+    {
+        "number" : "000150",
+        "company" : "두산"
+    },
+    {
+        "number" : "019170",
+        "company" : "신풍제약"
+    },
+    {
+        "number" : "051600",
+        "company" : "한전KPS"
+    },
+    {
+        "number" : "004370",
+        "company" : "농심"
+    },
+    {
+        "number" : "111770",
+        "company" : "영원무역"
+    },
+    {
+        "number" : "017800",
+        "company" : "현대엘리베이"
+    },
+    {
+        "number" : "007310",
+        "company" : "오뚜기"
+    },
+    {
+        "number" : "006260",
+        "company" : "LS"
+    },
+    {
+        "number" : "069620",
+        "company" : "대웅제약"
+    },
+    {
+        "number" : "010120",
+        "company" : "LS ELECTRIC"
+    },
+    {
+        "number" : "069960",
+        "company" : "현대백화점"
+    },
+    {
+        "number" : "001440",
+        "company" : "대한전선"
+    },
+    {
+        "number" : "014820",
+        "company" : "동원시스템즈"
+    },
+    {
+        "number" : "007700",
+        "company" : "F&F홀딩스"
+    },
+    {
+        "number" : "000240",
+        "company" : "한국앤컴퍼니"
+    },
+    {
+        "number" : "294870",
+        "company" : "HDC현대산업개발"
+    },
+    {
+        "number" : "001230",
+        "company" : "동국제강"
+    },
+    {
+        "number" : "020560",
+        "company" : "아시아나항공"
+    },
+    {
+        "number" : "010780",
+        "company" : "아이에스동서"
+    },
+    {
+        "number" : "185750",
+        "company" : "종근당"
+    },
+    {
+        "number" : "005300",
+        "company" : "롯데칠성"
+    },
+    {
+        "number" : "013890",
+        "company" : "지누스"
+    },
+    {
+        "number" : "000210",
+        "company" : "DL"
+    },
+    {
+        "number" : "001740",
+        "company" : "SK네트웍스"
+    },
+    {
+        "number" : "005250",
+        "company" : "녹십자홀딩스"
+    },
+    {
+        "number" : "079550",
+        "company" : "LIG넥스원"
+    },
+    {
+        "number" : "000670",
+        "company" : "영풍"
+    },
+    {
+        "number" : "073240",
+        "company" : "금호타이어"
+    },
+    {
+        "number" : "032350",
+        "company" : "롯데관광개발"
+    },
+    {
+        "number" : "004490",
+        "company" : "세방전지"
+    },
+    {
+        "number" : "006650",
+        "company" : "대한유화"
+    },
+    {
+        "number" : "192820",
+        "company" : "코스맥스"
+    },
+    {
+        "number" : "003240",
+        "company" : "태광산업"
+    },
+    {
+        "number" : "192080",
+        "company" : "더블유게임즈"
+    },
+    {
+        "number" : "214320",
+        "company" : "이노션"
+    },
+    {
+        "number" : "009420",
+        "company" : "한올바이오파마"
+    },
+    {
+        "number" : "031430",
+        "company" : "신세계인터내셔날"
+    },
+    {
+        "number" : "016380",
+        "company" : "KG동부제철"
+    },
+    {
+        "number" : "003850",
+        "company" : "보령제약"
+    },
+    {
+        "number" : "001800",
+        "company" : "오리온홀딩스"
+    },
+    {
+        "number" : "001120",
+        "company" : "LX인터내셔널"
+    },
+    {
+        "number" : "241590",
+        "company" : "화승엔터프라이즈"
+    },
+    {
+        "number" : "069260",
+        "company" : "휴켐스"
+    },
+    {
+        "number" : "020000",
+        "company" : "한섬"
+    },
+    {
+        "number" : "003000",
+        "company" : "부광약품"
+    },
+    {
+        "number" : "161890",
+        "company" : "한국콜마"
+    },
+    {
+        "number" : "006120",
+        "company" : "SK디스커버리"
+    },
+    {
+        "number" : "284740",
+        "company" : "쿠쿠홈시스"
+    },
+    {
+        "number" : "079160",
+        "company" : "CJ CGV"
+    },
+    {
+        "number" : "103140",
+        "company" : "풍산"
+    },
+    {
+        "number" : "000070",
+        "company" : "삼양홀딩스"
+    },
+    {
+        "number" : "105630",
+        "company" : "한세실업"
+    },
+    {
+        "number" : "005440",
+        "company" : "현대그린푸드"
+    },
+    {
+        "number" : "006040",
+        "company" : "동원산업"
+    },
+    {
+        "number" : "003520",
+        "company" : "영진약품"
+    },
+    {
+        "number" : "001680",
+        "company" : "대상"
+    },
+    {
+        "number" : "114090",
+        "company" : "GKL"
+    },
+    {
+        "number" : "057050",
+        "company" : "현대홈쇼핑"
+    },
+    {
+        "number" : "049770",
+        "company" : "동원F&B"
+    },
+    {
+        "number" : "383800",
+        "company" : "LX홀딩스"
+    },
+    {
+        "number" : "192400",
+        "company" : "쿠쿠홀딩스"
+    },
+    {
+        "number" : "002350",
+        "company" : "넥센타이어"
+    },
+    {
+        "number" : "064960",
+        "company" : "SNT모티브"
+    },
+    {
+        "number" : "003230",
+        "company" : "삼양식품"
+    },
+    {
+        "number" : "042670",
+        "company" : "현대두산인프라코어"
+    },
+    {
+        "number" : "071840",
+        "company" : "롯데하이마트"
+    },
+    {
+        "number" : "007570",
+        "company" : "일양약품"
+    },
+    {
+        "number" : "108670",
+        "company" : "LX하우시스"
+    }
+    ]
