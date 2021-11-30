@@ -30,6 +30,7 @@ function App() {
 
     &nbsp;&nbsp;
     {/*검색창*/}
+    <b>
     <input onKeyUp={onKeyUp} type="search" className="App-Search" placeholder="  기업명을 입력하시오." name="Enterprise" onChange={event => {setSearchTerm(event.target.value)}}/>
     
     {/*검색 기능*/}
@@ -46,8 +47,9 @@ function App() {
       </div>
       );
     })}
-
-    <button onClick={onAlert}>확인</button>
+&nbsp;
+<img src="button.png" className="App-button" onClick={onAlert}></img>
+</b>
 
     <br/><br/><br/><br/><br/><br/>
     
