@@ -5,6 +5,17 @@ import Api from './Api';
 import JSONDATA from './DATA.json'
 import {useState} from 'react'
 function App() {
+
+  const onAlert = () => {
+    alert('다음페이지로 넘어가야 함!');
+  }
+
+  const onKeyUp = (event) => {
+    if(event.keyCode === 13){
+      onAlert();
+    }
+  }
+
   const [searchTerm, setSearchTerm] = useState('')
   return (
     <div className="App" className="App-header" >
@@ -19,7 +30,7 @@ function App() {
 
     &nbsp;&nbsp;
     {/*검색창*/}
-    <input type="search" className="App-Search" placeholder="  기업명을 입력하시오." name="Enterprise" onChange={event => {setSearchTerm(event.target.value)}}/>
+    <input onKeyUp={onKeyUp} type="search" className="App-Search" placeholder="  기업명을 입력하시오." name="Enterprise" onChange={event => {setSearchTerm(event.target.value)}}/>
     
     {/*검색 기능*/}
     {JSONDATA.filter((val)=> {
@@ -36,6 +47,7 @@ function App() {
       );
     })}
 
+    <button onClick={onAlert}>확인</button>
 
     <br/><br/><br/><br/><br/><br/>
     
