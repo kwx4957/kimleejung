@@ -7,12 +7,12 @@ import {useState} from 'react'
 function App() {
 
   const onAlert = () => {
-    alert("");
+    alert("다음페이지로 넘어가야 함!");
   }
-
+  // 엔터 알림
   const onKeyUp = (event) => {
     if(event.keyCode === 13){
-      onAlert();
+      onAlert('다음페이지로 넘어가야 함!');
     }
   }
 
@@ -22,7 +22,7 @@ function App() {
         <Api />
 
     <a>
-      {/*로고이미지*/}
+      {/* 로고이미지 */}
       <img src="kimleejung_minilogo.png" className="App-logo"></img>
       {/*로고명*/}
       <img src="kimleejung_letterlogo.png" className="App-size"></img>
@@ -36,7 +36,7 @@ function App() {
       {/*검색 기능*/}
       {JSONDATA.filter((val)=> {
         if (searchTerm == ""){
-          return val
+          return null
         } else if (val.company.toLowerCase().includes(searchTerm.toLowerCase())){
           return val
         }
@@ -47,7 +47,7 @@ function App() {
         </div>
         );
       })}
-      
+
       &nbsp;
       {/*검색버튼*/}
       <img src="button.png" className="App-button" onClick={onAlert}></img>
