@@ -19,7 +19,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('')
   return (
     <div className="App" className="App-header" >
-        <Api />
+        <Api name="에스케이하이닉스" crno="1344110001387" />
 
     <a>
       {/* 로고이미지 */}

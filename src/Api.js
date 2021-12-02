@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import InputSample from './InputSample';
 
-function Api() {
+function Api({name,crno}) {
   const [apis, setApi] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -21,8 +22,8 @@ function Api() {
             numOfRows: 10,
             resultType: 'json',
             basDt: null,
-            crno: 1101110057012,
-            stckIssuCmpyNm: '동남합성'
+            crno: {crno}.crno ,
+            stckIssuCmpyNm: {name}.name
           },
         });        
         setApi(response);
@@ -39,7 +40,10 @@ function Api() {
   if (loading) return <div>로딩중..</div>;
   if (error) return <div>에러가 발생했습니다</div>;
   if (!apis) return null;
-  return true;
+  return  (
+    <div>
+      <InputSample api={apis} />
+    </div>);
 
 }
 
