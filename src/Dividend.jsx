@@ -3,13 +3,12 @@ import './App.css';
 import { type } from 'os';
 import Api from './Api';
 
-function dividend() {
+
+function Dividend() {
   
   return (
-    <div className="App" className="App-header" >
-        <Api />
-
-    <a>
+    <div>
+    <a href="#tag1">
     {/*로고이미지*/}
     <img src="kimleejung_minilogo.png" className="App-logo"></img>
     {/*로고명*/}
@@ -24,4 +23,4 @@ function dividend() {
   );
 }
 
-export default dividend;
+export default Dividend;
