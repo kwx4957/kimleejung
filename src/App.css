@@ -16,12 +16,19 @@
   }
   
   .App-header {
+    /*배경 색상*/
     background-color: #ffffff;
+    /*요소 최대 세로 너비 지정*/
     min-height: 100vh;
+     /*레이아웃 배치*/
     display: flex;
+    /*요소 위에서 아래로 정렬*/
     flex-direction: column;
+    /*요소 세로선 상의 가운데 정렬*/
     align-items: center;
+    /*요소 가운데 정렬*/
     justify-content: center;
+    /*글자 크기 및 색상 지정*/
     font-size: calc(10px + 2vmin);
     color: rgb(0, 0, 0);
   }

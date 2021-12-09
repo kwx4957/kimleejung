@@ -1,0 +1,14 @@
+.divi {
+    text-align: center;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        .divi-logo {
+            width: 140px;
+            display:flex;
+            height: 50px;
+            position:absolute;
+            left:0px;
+            top:1px;
+         }
+}
