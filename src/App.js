@@ -24,10 +24,10 @@ function Home() {
   const onAlert = () => {
     alert("다음페이지로 넘어가야 함!");
   }
-  // 엔터 알림
+  // 엔터키 입력하면 다음페이지
   const onKeyUp = (event) => {
     if(event.keyCode === 13){
-      onAlert();
+      {navigate({pathname: "/dividend"})}
     }
   }
   return (
