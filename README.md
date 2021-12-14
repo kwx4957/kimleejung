@@ -8,6 +8,7 @@
 1. Node.js , Vscode 설치
 * [Node.js]["https://nodejs.org/ko/download/"] 16.13.0
 * [VSC]["https://code.visualstudio.com/download"]
+* [react-router-dom] 6
 
 2. 디렉토리 생성  
 * mkdir dirName  
