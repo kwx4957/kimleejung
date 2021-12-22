@@ -1,14 +1,10 @@
 import './dividend.css';
-import React from 'react';
+import React, { useEffect, PureComponent } from 'react';
 import Api from './Api';
 import { useLocation } from "react-router-dom";
-<<<<<<< HEAD
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-=======
 import { ComposedChart, Area, LineChart, Line, BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { stat } from 'fs';
 
->>>>>>> d7c1ae7f5427f6a68391b7b12dd16ce0605183e8
 const data = [
   {
     name: '2017년',
@@ -40,7 +36,6 @@ const data = [
 
 const Dividend = () => {
   const { state } = useLocation();
-
   return (
     
     <>
