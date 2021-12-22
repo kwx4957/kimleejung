@@ -1,10 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import { type } from 'os';
-import Api from './Api';
 import JSONDATA from './DATA.json'
 import {useState} from 'react'
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Dividend from './Dividend';
 import React from 'react';
 

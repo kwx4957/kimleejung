@@ -2,8 +2,6 @@ import React, {useState } from 'react';
 
 function InputSample(props) {
   const [getholdstock, setholdstock] = useState('');
-  const [apis , setApi] = useState(props);
-  const [divide ,setDivide] = useState(null);
 
   const onChange = (e) => {
     setholdstock(e.target.value);
@@ -25,12 +23,10 @@ function InputSample(props) {
   
   return (
     <div>
-     <h4>예상 배당금 계산:</h4>  <input  type="number" onKeyPress={isNumber} onChange={onChange} value={getholdstock} />
+     <h4>예상 배당금 계산:</h4><input  type="number" onKeyPress={isNumber} onChange={onChange} value={getholdstock} />
       <button onClick={onClick}>조회</button>
       <button onClick={onReset}>초기화</button>
-      <div>
         <h4> 값: {getholdstock} </h4>
-      </div>
     </div>
   );
 }

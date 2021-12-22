@@ -43,7 +43,6 @@ function Api({ name, crno }) {
   if (!apis) return null;
   return  (
     <div>
-       {/* <InputSample api={apis} /> */}
       {apis?.map(v => <div>
         <span>{v.basDt} {v.isinCdNm} </span><br/>
           <span>배당락 기준일 : {v.dvdnBasDt}</span><br/>
