@@ -17,8 +17,8 @@ function Api({ name, crno }) {
         setLoading(true);
         const res = await axios.get('/getDiviInfo',{
           params: {
-            pageNo : 1,
-            numOfRows: 10,
+            pageNo : 34,
+            numOfRows: 1,
             resultType: 'json',
             basDt: null,
             fnccmpNm: name,
