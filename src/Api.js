@@ -46,8 +46,9 @@ function Api({ name, crno }) {
       {apis?.map(v => <div>
           <span>배당락 기준일 : {v.dvdnBasDt}</span><br/>
           <span>배당 지급일 : {v.cashDvdnPayDt}</span><br/>
-          <span>1주당 배당금 : {v.stckGenrCashDvdnRt}원</span>
-          <InputSample api={v.stckGenrCashDvdnRt} />
+          <span>1주당 배당금 : {v.stckGenrDvdnRt}원</span>
+          <span>{v.cashGrdnDvdnRt}</span>
+          <InputSample api={v.stckParPrc} />
       </div>)}
     </div>
     
