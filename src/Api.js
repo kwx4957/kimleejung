@@ -43,14 +43,17 @@ function Api({ name, crno }) {
   if (!apis) return null;
   return  (
     <div>
-      {/* <InputSample api={apis} /> */}
+       {/* <InputSample api={apis} /> */}
       {apis?.map(v => <div>
         <span>{v.basDt} {v.isinCdNm} </span><br/>
           <span>배당락 기준일 : {v.dvdnBasDt}</span><br/>
           <span>배당 지급일 : {v.cashDvdnPayDt}</span><br/>
           <span>1주당 배당금 : {v.stckGenrCashDvdnRt}원</span>
+          <InputSample api={v.stckGenrCashDvdnRt} />
       </div>)}
-    </div>);
+    </div>
+    
+    );
 }
 
 export default Api;

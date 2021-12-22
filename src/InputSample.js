@@ -2,16 +2,15 @@ import React, {useState } from 'react';
 
 function InputSample(props) {
   const [getholdstock, setholdstock] = useState('');
-  const [apis , setApi] = useState(props.api);
-  const [divide ,setDivide] = useState({apis}.apis.response.body.items.item[18]);
-  console.log({apis}.apis.response.body.items.item[18]);
+  const [apis , setApi] = useState(props);
+  const [divide ,setDivide] = useState(null);
 
   const onChange = (e) => {
     setholdstock(e.target.value);
   };
 
   const onClick = () => {
-    setholdstock(getholdstock * divide.stckGenrDvdnAmt);  
+    setholdstock(getholdstock * props.api);  
   };
 
   const onReset = () => {
@@ -26,11 +25,11 @@ function InputSample(props) {
   
   return (
     <div>
-      <input  type="number" onKeyPress={isNumber} onChange={onChange} value={getholdstock} />
+     <h4>예상 배당금 계산:</h4>  <input  type="number" onKeyPress={isNumber} onChange={onChange} value={getholdstock} />
       <button onClick={onClick}>조회</button>
       <button onClick={onReset}>초기화</button>
       <div>
-        <b>값: {getholdstock}</b>
+        <h4> 값: {getholdstock} </h4>
       </div>
     </div>
   );
