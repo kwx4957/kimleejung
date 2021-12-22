@@ -41,10 +41,9 @@ const Dividend = () => {
     <div>
       {/* 로고 위치 및 크기 지정*/}
       <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'></img>
-      <p>{ state.number }</p>
-      <p>{ state.company }</p>
-      <p>{ state.law_number }</p>
-      <Api name={ state.company } crno={ state.law_number } />
+      {/* <p>{ state.number }</p> */}
+      <p className="company-name">{ state.company}</p>
+      {/* <p>{ state.law_number }</p> */}
    
     {/* mo_main 그래프*/}
     <h4>간단한 주가 선 차트</h4>
@@ -68,6 +67,8 @@ const Dividend = () => {
           <Line type="monotone" dataKey="주가" stroke="#50bcdf" />
         </LineChart>
       </ResponsiveContainer>
+      <br/>
+      <Api name={ state.company } crno={ state.law_number } />
     
     {/* mo_ex_divide 그래프*/}
     <h4> 자신의 배당금 예상 </h4>

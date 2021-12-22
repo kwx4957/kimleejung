@@ -11,4 +11,12 @@
             left:0px;
             top:1px;
          }
+         .company-name {
+            width: 140px;
+            display:flex;
+            height: 50px;
+            position:absolute;
+            left:0px;
+            top:1px;
+         }
 }

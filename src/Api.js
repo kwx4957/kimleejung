@@ -45,11 +45,10 @@ function Api({ name, crno }) {
     <div>
       {/* <InputSample api={apis} /> */}
       {apis?.map(v => <div>
-        <span>{v.cashDvdnPayDt} </span>
-        <span>{v.isinCdNm} </span>
-        <span>{v.scrsItmsKcdNm} </span>
-        <span>{v.stckDvdnRcdNm} </span>
-        <span>{v.stckGenrCashDvdnRt}</span>
+        <span>{v.basDt} </span><br/>
+          <span>배당락 기준일 : {v.dvdnBasDt}</span><br/>
+          <span>배당 지급일 : {v.cashDvdnPayDt}</span><br/>
+          <span>1주당 배당금 : {v.stckGenrCashDvdnRt}원</span>
       </div>)}
     </div>);
 }
