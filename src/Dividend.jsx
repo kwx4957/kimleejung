@@ -42,9 +42,9 @@ const Dividend = () => {
     <div>
       {/* 로고 위치 및 크기 지정*/}
       <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'></img>
-      {/* <p>{ state.number }</p> */}
+      {/* 회사명 */}
       <p className="company-name">{ state.company}</p><br/>
-      {/* <p>{ state.law_number }</p> */}
+
     </div>
     
     {/* mo_main 그래프*/}
@@ -64,13 +64,15 @@ const Dividend = () => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
-
+          <Legend/>
           <Line type="monotone" dataKey="주가" stroke="#50bcdf" />
         </LineChart>
       </ResponsiveContainer><br/>
       <div>
+        <br/><br/>
         <h7 className="ex_divide">예상배당금</h7>
         <Api name={ state.company } crno={ state.law_number } />
+        <br/>
       </div>
    
     {/* mo_ex_divide 그래프*/}
@@ -93,7 +95,7 @@ const Dividend = () => {
           <Bar dataKey="uv" fill="#50bcdf" />
         </BarChart>
       </ResponsiveContainer>
-    
+      <br/><br/>
     {/* mo_divide_history 그래프*/}
       <h4> 과거 배당금 내역 & 배당률 </h4>
       <ResponsiveContainer width="50%" aspect={3}>
