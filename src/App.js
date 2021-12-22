@@ -8,7 +8,6 @@ import React from 'react';
 function App() {
   return (
     <div className="App App-header">
-        {/*<Api name="에스케이하이닉스" crno="1344110001387" />*/}
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/dividend" element={<Dividend/>} />
@@ -23,7 +22,7 @@ function Home() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    //검색한 데이터가 제이스 데이터 안에 찾음
+    //검색창에서 입력한 값을 DATA.json파일에서 찾음
     const data = JSONDATA.find( ({ company }) => company === searchTerm);
     if(!data) return alert('검색 결과가 없습니다.')
     navigate('/dividend', { state: data });
