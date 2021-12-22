@@ -1,9 +1,39 @@
-import logo from './logo.svg';
+
 import './dividend.css';
-import { type } from 'os';
+import React, { useEffect, PureComponent } from 'react';
 import Api from './Api';
-import React, { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
+import { LineChart, Line, BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { stat } from 'fs';
+
+const data = [
+  {
+    name: '2017년',
+    uv: 1220,
+    주가: 111
+  },
+  {
+    name: '2018년',
+    uv: 3000,
+    주가: 1200
+  },
+
+  {
+    name: '2019년',
+    uv: 3000,
+    주가: 1600
+  },
+  {
+    name: '2020년',
+    uv: 2000,
+    주가: 1700
+  },
+  {
+    name: '2021년',
+    uv: 2780,
+    주가: 2000
+  },
+];
 
 const Dividend = () => {
   const { state } = useLocation();
@@ -15,7 +45,73 @@ const Dividend = () => {
       <p>{ state.company }</p>
       <p>{ state.law_number }</p>
       <Api name={ state.company } crno={ state.law_number } />
+   
+    {/* mo_main 그래프*/}
+    <h4>간단한 주가 선 차트</h4>
+    <ResponsiveContainer width="100%" aspect={2}>
+        <LineChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 1,
+            right: 50,
+            left: 10,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey="주가" stroke="#50bcdf" />
+        </LineChart>
+      </ResponsiveContainer>
+    
+    {/* mo_ex_divide 그래프*/}
+    <h4> 자신의 배당금 예상 </h4>
+    <ResponsiveContainer width="100%" aspect={3}>
+        <BarChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 10,
+            right: 10,
+            left: 10,
+            bottom: 10,
+          }}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" tick={{stroke:"black"}}/>
+          <YAxis tick={{stroke:"black"}}/>
+          <Tooltip />
+          <Bar dataKey="uv" fill="#50bcdf" />
+        </BarChart>
+      </ResponsiveContainer>
+    
+    {/* mo_divide_history 그래프*/}
+      <h4> 과거 배당금 내역 & 배당률 </h4>
+      <ResponsiveContainer width="100%" aspect={3}>
+        <BarChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 10,
+            right: 10,
+            left: 10,
+            bottom: 10,
+          }}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" tick={{stroke:"black"}}/>
+          <YAxis tick={{stroke:"black"}}/>
+          <Tooltip />
+          <Bar dataKey="uv" fill="#50bcdf" />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
+    
   );
 }
 
