@@ -2,7 +2,13 @@ import './dividend.css';
 import React from 'react';
 import Api from './Api';
 import { useLocation } from "react-router-dom";
+<<<<<<< HEAD
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+=======
+import { ComposedChart, Area, LineChart, Line, BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { stat } from 'fs';
+
+>>>>>>> d7c1ae7f5427f6a68391b7b12dd16ce0605183e8
 const data = [
   {
     name: '2017년',
@@ -63,8 +69,7 @@ const Dividend = () => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip />
-          <Legend />
+
           <Line type="monotone" dataKey="주가" stroke="#50bcdf" />
         </LineChart>
       </ResponsiveContainer><br/>
@@ -89,7 +94,7 @@ const Dividend = () => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" tick={{stroke:"black"}}/>
           <YAxis tick={{stroke:"black"}}/>
-          <Tooltip />
+
           <Bar dataKey="uv" fill="#50bcdf" />
         </BarChart>
       </ResponsiveContainer>
@@ -97,7 +102,7 @@ const Dividend = () => {
     {/* mo_divide_history 그래프*/}
       <h4> 과거 배당금 내역 & 배당률 </h4>
       <ResponsiveContainer width="50%" aspect={3}>
-        <BarChart
+      <ComposedChart
           width={500}
           height={300}
           data={data}
@@ -107,14 +112,15 @@ const Dividend = () => {
             left: 10,
             bottom: 10,
           }}>
+
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" tick={{stroke:"black"}}/>
-          <YAxis tick={{stroke:"black"}}/>
-          <Tooltip />
-          <Bar dataKey="uv" fill="#50bcdf" />
-        </BarChart>
+          <XAxis dataKey="name" tick={{stroke:"black"}} />
+          <YAxis tick={{stroke:"black"}} />
+         
+          <Bar dataKey="uv" barSize={20} fill="#50bcdf" />
+          <Line type="monotone" dataKey="주가" stroke="green" />
+        </ComposedChart>
       </ResponsiveContainer>
-    
     </>
   );
 }
