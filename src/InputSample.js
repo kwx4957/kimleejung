@@ -24,7 +24,7 @@ function InputSample(props) {
   return (
     <div>
      <h4>예상 배당금 계산 :<> </>
-        <input  type="number" onKeyPress={isNumber} onChange={onChange} value={getholdstock} />
+        <input  type="number" onKeyPress={isNumber} onChange={onChange} />
         <button onClick={onClick}>조회</button>
         <button onClick={onReset}>초기화</button>
       </h4>

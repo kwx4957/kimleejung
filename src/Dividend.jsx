@@ -127,8 +127,8 @@ const Dividend = () => {
   if (!apis) return null;
   return (
     <>
-      {/* 로고 위치 및 크기 지정*/}
-      <div style={{ width: '100vw' }}>
+      {/* 로고 위치 및 크기 지정 */}
+      <div style={{ width: '100vw' }}> 
         <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'/>
         {/* 회사명 */}
         <p className="company-name">{ state.company }</p>
