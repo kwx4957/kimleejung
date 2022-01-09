@@ -160,7 +160,9 @@ const Dividend = () => {
       <span>배당락 기준일 : { dayjs(sortData(apis)[sortData(apis).length - 1].dvdnBasDt).format('YYYY년 MM월 DD일') }</span>
       <span>배당 지급일 : { dayjs(sortData(apis)[sortData(apis).length - 1].cashDvdnPayDt).format('YYYY년 MM월 DD일') }</span>
       <span>1주당 배당금 : {sortData(apis)[sortData(apis).length - 1].stckGenrCashDvdnRt}원</span>
+      
       <InputSample api={sortData(apis)[sortData(apis).length - 1].stckGenrCashDvdnRt}/>
+
       <div style={{ width: '50vw' }}>
         <Bar options={options} data={{
           labels: sortData(apis).map(v => dayjs(v.cashDvdnPayDt).format('YYYY년 MM월 DD일')),

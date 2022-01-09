@@ -6,7 +6,16 @@
     height: 40vmin;
     pointer-events: none;
   }
-  
+
+  .Login {
+    width: 80px;
+    height: 40px;
+    display:flex;
+    position:absolute;
+    left:1830px;
+    top:10px;
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 20s linear;

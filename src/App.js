@@ -3,16 +3,19 @@ import JSONDATA from './DATA.json'
 import {useState} from 'react'
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Dividend from './Dividend';
+import Login from './Login' ;
 import React from 'react';
 
 function App() {
   return (
+    <>
     <div className="App App-header">
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/dividend" element={<Dividend/>} />
         </Routes>
     </div>
+    </>
   );
 }
 
@@ -27,8 +30,18 @@ function Home() {
     if(!data) return alert('검색 결과가 없습니다.')
     navigate('/dividend', { state: data });
   }
+
+  const onLogin = (e) => {
+    e.preventDefault();
+    navigate('/Login');
+  }
+
   return (
     <>
+      <form onSubmit={onLogin}>
+        <button class="Login">로그인</button>
+      </form>
+
       <div>
         {/* 로고이미지 */}
         <img src="kimleejung_minilogo.png" className="App-logo" alt='logo'></img>
