@@ -1,4 +1,4 @@
-.divi {
+.log {
     text-align: center;
     }
 
@@ -11,14 +11,6 @@
             left:0px;
             top:1px;
          }
-         .company-name {
-            width: 500px;
-            display:flex;
-            height: 50px;
-            position:absolute;
-            left:160px;
-            top:-25px;
-         }
          .ex_divide {
             width: 150;
             display:flex;
@@ -28,3 +20,4 @@
             top:700px;
          }
 }
+
