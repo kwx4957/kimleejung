@@ -1,0 +1,22 @@
+.divi {
+    text-align: center;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        .divi-logo {
+            width: 140px;
+            display:flex;
+            height: 50px;
+            position:absolute;
+            left:0px;
+            top:1px;
+         }
+         .ex_divide {
+            width: 150;
+            display:flex;
+            height: 50px;
+            position:absolute;
+            left:630px;
+            top:700px;
+         }
+}

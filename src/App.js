@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/dividend" element={<Dividend/>} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
     </div>
     </>
@@ -33,7 +34,7 @@ function Home() {
 
   const onLogin = (e) => {
     e.preventDefault();
-    navigate('/Login');
+    navigate('/login');
   }
 
   return (
