@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Dividend from './Dividend';
 import Login from './Login' ;
 import React from 'react';
+import Join from './Join';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/dividend" element={<Dividend/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/join" element={<Join/>} />
         </Routes>
     </div>
     </>
@@ -37,10 +39,18 @@ function Home() {
     navigate('/login');
   }
 
+  const onJoin = (e) => {
+    e.preventDefault();
+    navigate('/join');
+  }
+
   return (
     <>
       <form onSubmit={onLogin}>
         <button class="Login">로그인</button>
+      </form>
+      <form onSubmit={onJoin}>
+        <button class="Join">회원가입</button>
       </form>
 
       <div>
