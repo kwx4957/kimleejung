@@ -50,7 +50,7 @@ function Home() {
                             </a><br/>
                         </button>
                     </ul>
-                    <p>SNS 로그인은 계정이 연결되어 있어야 합니다.</p>
+                    
                     </div>
                 </div>
             </from>

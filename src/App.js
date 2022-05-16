@@ -9,13 +9,21 @@ import React, { Children } from 'react';
 function App() {
   return (
     <>
-    <div className="App App-header">
-        <Routes>
+          <div className='App-header2'>
+          <Routes>
           <Route path="/" element={<Home />}/>
+          </Routes>
+          </div>
+
+          <div className="App App-header">
+          <Routes>
           <Route path="/dividend" element={<Dividend/>} />
+          </Routes>
+          
+          <Routes>
           <Route path="/login" element={<Login/>} />
-        </Routes>
-    </div>
+          </Routes>
+          </div>
     </>
   );
 }
@@ -95,6 +103,7 @@ function Home() {
         </form>
 
         <div className='nav' style={isNav?{display:"block"}:{display:'none'}}>
+          
           {/*sample data*/}
           <h1>배당률 TOP 10</h1>
           <ul>1순위, 기업 명, n%</ul>
@@ -107,6 +116,7 @@ function Home() {
           <ul>8순위, 기업 명, n%</ul>
           <ul>9순위, 기업 명, n%</ul>
           <ul>10순위, 기업 명, n%</ul>
+          
           <form onSubmit={onSide}>
             <button className="Side_Button">
               <img src="arrow_pull.png" className="TOP" alt="기업순위" />
