@@ -4,8 +4,7 @@ import {useState} from 'react'
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Dividend from './Dividend';
 import Login from './Login' ;
-import React from 'react';
-import Join from './Join';
+import React, { Children } from 'react';
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/dividend" element={<Dividend/>} />
           <Route path="/login" element={<Login/>} />
-          <Route path="/join" element={<Join/>} />
         </Routes>
     </div>
     </>
@@ -25,6 +23,7 @@ function App() {
 function Home() {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
+  const [isNav,setNav]=useState(false)
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -39,19 +38,21 @@ function Home() {
     navigate('/login');
   }
 
-  const onJoin = (e) => {
-    e.preventDefault();
-    navigate('/join');
-  }
+  
+  const onSide = (e) => {
+  e.preventDefault();
+  setNav((prev) => !prev)
+}
 
   return (
     <>
-      <form onSubmit={onLogin}>
-        <button class="Login">로그인</button>
-      </form>
-      <form onSubmit={onJoin}>
-        <button class="Join">회원가입</button>
-      </form>
+    <form onSubmit={onLogin}>
+      {/* 로그인 */}
+      <button className="Login_Button">
+        <img src="login.png" className='Login' alt="로그인"/><br/>
+        <span>Login</span>
+      </button>
+    </form>
 
       <div>
         {/* 로고이미지 */}
@@ -62,12 +63,11 @@ function Home() {
 
       &nbsp;&nbsp;
       {/*검색창*/}
-      <b>
         <form onSubmit={onSubmit}>
           <input type="search" className="App-Search" placeholder="기업명을 입력하시오." id="Enterprise" value={searchTerm} onChange={event => {setSearchTerm(event.target.value)}}/>
-          &nbsp;
+          &nbsp; 
           {/*검색버튼*/}
-          <button>
+          <button className="search_button">
             <img src="button.png" className="App-button" alt='버튼 이미지' />
           </button>
         </form>
@@ -86,7 +86,33 @@ function Home() {
           </div>
           );
         })}
-      </b>
+
+        {/* 기업순위 */}
+        <form onSubmit={onSide}>
+          <button className="TOP_Button">
+            <img src="arrow_push.png" className="TOP" alt="배당률 순위" />
+          </button>
+        </form>
+
+        <div className='nav' style={isNav?{display:"block"}:{display:'none'}}>
+          {/*sample data*/}
+          <h1>배당률 TOP 10</h1>
+          <ul>1순위, 기업 명, n%</ul>
+          <ul>2순위, 기업 명, n%</ul>
+          <ul>3순위, 기업 명, n%</ul>
+          <ul>4순위, 기업 명, n%</ul>
+          <ul>5순위, 기업 명, n%</ul>
+          <ul>6순위, 기업 명, n%</ul>
+          <ul>7순위, 기업 명, n%</ul>
+          <ul>8순위, 기업 명, n%</ul>
+          <ul>9순위, 기업 명, n%</ul>
+          <ul>10순위, 기업 명, n%</ul>
+          <form onSubmit={onSide}>
+            <button className="Side_Button">
+              <img src="arrow_pull.png" className="TOP" alt="기업순위" />
+            </button>
+          </form> 
+        </div>
     </>
   );
 }

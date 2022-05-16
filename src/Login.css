@@ -20,8 +20,11 @@
             top:700px;
         }
     }
-    .sing-in{
-        width : 300px;
-        height: 180px;
+    .sns-in{
+        width : 700px;
+        height: 500px;
         border: 2px solid rgb(0, 174, 255);
+        position:absolute;
+        left:35%;
+        top:25%;
     }

@@ -7,21 +7,22 @@
     pointer-events: none;
   }
 
-  .Login {
-    width: 80px;
-    height: 40px;
-    display:flex;
+  .Login_Button{
+    background-color:transparent;
+    border: 0;
+    margin: auto;
+    display:block;
     position:absolute;
-    left:1830px;
+    left: 95%;
     top:10px;
-  }
+}
 
-  .Join {
-    width: 80px;
+  .Login {
+    width: 40px;
     height: 40px;
     display:flex;
     position:absolute;
-    left:1730px;
+    left:95%;
     top:10px;
   }
 
@@ -33,6 +34,14 @@
     }
   }
   
+  .search_button{
+    background-color:transparent;
+    border: 0;
+    width: 40%;
+    height: 50px;
+    
+}
+
   .App-header {
     /*배경 색상*/
     background-color: #ffffff;
@@ -56,18 +65,26 @@
   }
   
   .App-Search{
-    width: 700px;
+    top:540px;
+    left: 655px;
+    width: 550px;
     height: 60px;
-    border-width: 9px;
-    border-color: #50bcdf;
+    border-width: 7px;
+    border-style:solid;
+    border-color: rgb(1, 6, 87);
     border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px; 
 
     }
 
     .App-button{
+      position: fixed;
+      top: 548px;
+      left: 1220px;
+      background-color:transparent;
+      border: 0;
       width: 50px;
       height: 50px;
-    }
+  }
     
   @keyframes App-logo-spin {
     from {
@@ -77,3 +94,34 @@
       transform: rotate(360deg);
     }
   }
+  .nav{
+    display: none;
+    width: 400px;
+    background-color:aliceblue;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.TOP_Button{
+  background-color:transparent;
+  border: 0;
+  display:flex;
+  position:absolute;
+  left:95%;
+  top:500px;
+}
+
+.TOP {    
+  width: 40px;
+  height: 40px;
+}
+
+.Side_Button{
+  background-color:transparent;
+   border: 0;
+  display:flex;
+  position:absolute;
+  top:500px;
+}

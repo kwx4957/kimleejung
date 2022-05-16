@@ -1,6 +1,5 @@
 import './Login.css';
 import React from 'react';
-import Join from './Join';
 import { Routes, Route, useNavigate } from "react-router-dom";
 function Login () {
     
@@ -9,7 +8,6 @@ function Login () {
         <div className="App App-header">
             <Routes>
                 <Route path="/" element={<Home />}/>
-                <Route path="/join" element={<Join/>} />
             </Routes>
         </div>
         </>
@@ -18,10 +16,6 @@ function Login () {
 function Home() {
     const navigate = useNavigate();
 
-    const onJoin = (e) => {
-        e.preventDefault();
-        navigate('/join');
-    }
 
     return (
         <>
@@ -29,16 +23,38 @@ function Home() {
             <div style={{ width: '100vw' }}> 
                 <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'/>
             </div>
-            <div className='sing-in'>
-                Login<br/>
-                <input type="search" placeholder="ID" id="id"/><br/>
-                <input type="search" placeholder="PW" id="password"/><br/>
-                <button>로그인</button>
-                <from onSubmit={onJoin}>
-                    <button>회원가입</button>  
-                </from>
-                
-            </div>
+
+            <from className='sns-in'>
+                <div class="sns_login_wrap"><div class="tit">SNS 로그인</div>
+                <div class="sns_list">
+                    <ul>
+                        <button>
+                            <a href="javascript:void(0);">
+                                <span class="logo">
+                                    <img src="naver_long.png" alt="네이버"/>
+                                </span>
+                            </a><br/>
+                        </button>
+                        <button>
+                            <a href="javascript:void(0);">
+                                <span class="logo">
+                                    <img src="kakao_long.png" alt="카카오톡"/>
+                                </span>
+                            </a><br/>
+                        </button>
+                        <button>
+                            <a href="javascript:void(0);">
+                                <span class="logo">
+                                    <img src="google_long.png" alt="구글"/>
+                                </span>
+                            </a><br/>
+                        </button>
+                    </ul>
+                    <p>SNS 로그인은 계정이 연결되어 있어야 합니다.</p>
+                    </div>
+                </div>
+            </from>
+
         </>
     )
 }
