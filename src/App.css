@@ -67,8 +67,15 @@
 
  .App-header2{
    position: fixed;
-   top: 530px;
-   left: 860px;
+   top: 615px;
+   left: 660px;
+   display: -webkit-box;
+   /* background-color: black; */
+   border: 1px solid red;
+   width: 540px;
+   -webkit-line-clamp: 7;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
  }
 
   .App-size{

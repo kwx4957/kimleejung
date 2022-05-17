@@ -10,9 +10,11 @@ function App() {
   return (
     <>
           <div className='App-header2'>
+            <ul>
           <Routes>
           <Route path="/" element={<Home />}/>
           </Routes>
+          </ul>
           </div>
 
           <div className="App App-header">
@@ -69,11 +71,11 @@ function Home() {
         <img src="kimleejung_letterlogo.png" className="App-size" alt='logoName'></img>
       </div>
 
-      &nbsp;&nbsp;
+    
       {/*검색창*/}
         <form onSubmit={onSubmit}>
           <input type="search" className="App-Search" placeholder="기업명을 입력하시오." id="Enterprise" value={searchTerm} onChange={event => {setSearchTerm(event.target.value)}}/>
-          &nbsp; 
+         
           {/*검색버튼*/}
           <button className="search_button">
             <img src="button.png" className="App-button" alt='버튼 이미지' />
