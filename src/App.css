@@ -48,6 +48,7 @@
 }
 
 .App-header {
+  
   /*배경 색상*/
   background-color: #ffffff;
   /*요소 최대 세로 너비 지정*/
@@ -67,13 +68,14 @@
 
  .App-header2{
    position: fixed;
-   top: 615px;
-   left: 660px;
+   top: 555px;
+   left: 680px;
    display: -webkit-box;
-   /* background-color: black; */
+   /* 테두리 도전?  
+   padding: 1px;
    border: 1px solid red;
-   width: 540px;
-   -webkit-line-clamp: 7;
+   width: 500px; */
+   -webkit-line-clamp: 6;
    -webkit-box-orient: vertical;
    overflow: hidden;
  }

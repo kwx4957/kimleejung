@@ -8,13 +8,11 @@ import React, { Children } from 'react';
 
 function App() {
   return (
-    <>
+    <>    
           <div className='App-header2'>
-            <ul>
           <Routes>
           <Route path="/" element={<Home />}/>
           </Routes>
-          </ul>
           </div>
 
           <div className="App App-header">
