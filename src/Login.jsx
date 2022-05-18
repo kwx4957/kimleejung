@@ -28,21 +28,21 @@ function Home() {
                 <div class="sns_login_wrap"><div class="tit">SNS 로그인</div>
                 <div class="sns_list">
                     <ul>
-                        <button>
+                        <button className="Naver_Button">
                             <a href="javascript:void(0);">
                                 <span class="logo">
                                     <img src="naver_long.png" alt="네이버"/>
                                 </span>
                             </a><br/>
                         </button>
-                        <button>
+                        <button className="Kakao_Button">
                             <a href="javascript:void(0);">
                                 <span class="logo">
                                     <img src="kakao_long.png" alt="카카오톡"/>
                                 </span>
                             </a><br/>
                         </button>
-                        <button>
+                        <button className="Gooogle_Button">
                             <a href="javascript:void(0);">
                                 <span class="logo">
                                     <img src="google_long.png" alt="구글"/>

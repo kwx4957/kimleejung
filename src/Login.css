@@ -23,11 +23,32 @@
     .sns-in{
         width : 700px;
         height: 500px;
-
+        border: 1px solid rgb(0, 174, 255);
         left:35%;
         top:25%;
     }
     .tit{
     font-size: 50px;
     line-height: 100px;
+    }
+
+    .Naver_Button{
+        background-color:transparent;
+        border: 0;
+        margin: auto;
+        display:block;
+    }
+
+    .Kakao_Button{
+        background-color:transparent;
+        border: 0;
+        margin: auto;
+        display:block;
+    }
+
+    .Gooogle_Button{
+        background-color:transparent;
+        border: 0;
+        margin: auto;
+        display:block;
     }
