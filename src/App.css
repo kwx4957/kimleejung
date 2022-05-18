@@ -17,6 +17,15 @@
     top:10px;
 }
 
+.Login_Text{
+  background-color:transparent;
+  border: 0;
+  margin: auto;
+  position:fixed;
+  left: 1515px;
+  top:65px;
+}
+
   .Login {
     width: 40px;
     height: 40px;
@@ -25,6 +34,34 @@
     left:95%;
     top:10px;
   }
+
+.Board_Botton{
+  background-color:transparent;
+  border: 0;
+  margin: auto;
+  display:block;
+  position:fixed;
+  left: 1400px;
+  top:10px;
+}
+
+.Board {
+  width: 40px;
+  height: 40px;
+  display:flex;
+  position:absolute;
+  left:85%;
+  top:10px;
+}
+
+.Board_Text{
+  background-color:transparent;
+  border: 0;
+  margin: auto;
+  position:fixed;
+  left: 1410px;
+  top:65px;
+}
 
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {

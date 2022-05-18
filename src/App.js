@@ -4,25 +4,28 @@ import {useState} from 'react'
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Dividend from './Dividend';
 import Login from './Login' ;
+import Board from './Board' ;
 import React, { Children } from 'react';
 
 function App() {
   return (
     <>    
-          <div className='App-header2'>
           <Routes>
-          <Route path="/" element={<Home />}/>
+            <Route path="/" element={<Home />}/>
           </Routes>
-          </div>
 
           <div className="App App-header">
-          <Routes>
-          <Route path="/dividend" element={<Dividend/>} />
-          </Routes>
-          
-          <Routes>
-          <Route path="/login" element={<Login/>} />
-          </Routes>
+            <Routes>
+              <Route path="/dividend" element={<Dividend/>} />
+            </Routes>
+            
+            <Routes>
+              <Route path="/login" element={<Login/>} />
+            </Routes>
+
+            <Routes>
+              <Route path="/board" element={<Board/>} />
+            </Routes>
           </div>
     </>
   );
@@ -52,13 +55,27 @@ function Home() {
   setNav((prev) => !prev)
 }
 
+const onBoard = (e) => {
+  e.preventDefault();
+  alert('검색 결과가 없습니다.')
+  // navigate('/board');
+}
+
   return (
     <>
+    <from onSubmit={onBoard}>
+      {/*게시판*/}
+      <button className="Board_Botton">
+        <img src="board.png" className='Board' alt="게시판"/><br/>
+        <span className="Board_Text">게시판</span>
+      </button>
+    </from>
+    
     <form onSubmit={onLogin}>
       {/* 로그인 */}
       <button className="Login_Button">
         <img src="login.png" className='Login' alt="로그인"/><br/>
-        <span>Login</span>
+        <span className="Login_Text">Login</span>
       </button>
     </form>
 

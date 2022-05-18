@@ -14,8 +14,6 @@ function Login () {
     );
 } 
 function Home() {
-    const navigate = useNavigate();
-
 
     return (
         <>
