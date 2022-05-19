@@ -85,7 +85,6 @@ const onBoard = (e) => {
         {/*로고명*/}
         <img src="kimleejung_letterlogo.png" className="App-size" alt='logoName'></img>
       </div>
-
     
       {/*검색창*/}
         <form onSubmit={onSubmit}>
@@ -96,21 +95,21 @@ const onBoard = (e) => {
             <img src="button.png" className="App-button" alt='버튼 이미지' />
           </button>
         </form>
-
-        {/*검색 기능*/}
-        {JSONDATA.filter((val)=> {
-          if (searchTerm === ""){
-            return null
-          } else if (val.company.toLowerCase().includes(searchTerm.toLowerCase())){
-            return val
-          }
-        }).map((val,key)=> {
-          return (
-          <div className="user" key={key} onClick={()=>{setSearchTerm(val.company)}}> 
-            <p> {val.company} </p>
-          </div>
-          );
-        })}
+<div  className="search_list">
+          {/*검색 기능*/}
+          {JSONDATA.filter((val)=> {
+            if (searchTerm === ""){
+              return null
+            } else if (val.company.toLowerCase().includes(searchTerm.toLowerCase())){
+              return val
+            }
+          }).map((val,key)=> {
+            return (
+            <div className="user" key={key} onClick={()=>{setSearchTerm(val.company)}}> 
+              <p> {val.company} </p>
+            </div>
+            );
+          })}</div>
 
         {/* 기업순위 */}
         <form onSubmit={onSide}>
