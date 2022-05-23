@@ -4,7 +4,6 @@ import {useState} from 'react'
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Dividend from './Dividend';
 import Login from './Login' ;
-import Board from './Board' ;
 import React, { Children } from 'react';
 
 function App() {
@@ -23,9 +22,6 @@ function App() {
               <Route path="/login" element={<Login/>} />
             </Routes>
 
-            <Routes>
-              <Route path="/board" element={<Board/>} />
-            </Routes>
           </div>
     </>
   );
@@ -63,13 +59,6 @@ const onBoard = (e) => {
 
   return (
     <>
-    <from onSubmit={onBoard}>
-      {/*게시판*/}
-      <button className="Board_Botton">
-        <img src="board.png" className='Board' alt="게시판"/><br/>
-        <span className="Board_Text">게시판</span>
-      </button>
-    </from>
     
     <form onSubmit={onLogin}>
       {/* 로그인 */}
@@ -97,7 +86,6 @@ const onBoard = (e) => {
         </form>
 <div  className="search_list">
           {/*검색 기능*/}
-      
           {JSONDATA.filter((val)=> {
             if (searchTerm === ""){
               return null

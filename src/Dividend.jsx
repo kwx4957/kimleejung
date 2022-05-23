@@ -4,6 +4,8 @@ import { useLocation } from "react-router-dom";
 import axios from 'axios';
 import dayjs from 'dayjs';
 import 'dayjs/locale/ko';
+import Board from './Board' ;
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import { 
   LineChart, 
@@ -133,7 +135,14 @@ const Dividend = () => {
         {/* 회사명 */}
         <p className="company-name">{ state.company }</p>
       </div>
-
+      
+      <from onSubmit={Board}>
+      {/*게시판*/}
+      <button className="Board_Botton">
+        <img src="board.png" className='Board' alt="게시판"/><br/>
+        <span className="Board_Text">게시판</span>
+      </button>
+    </from>
       {/* mo_main 그래프*/}
       <h4>간단한 주가 선 차트</h4>
       <ResponsiveContainer width="50%" aspect={2}>
