@@ -18,7 +18,7 @@ function Home() {
     return (
         <>
             {/* 로고 위치 및 크기 지정 */}
-            <div style={{ width: '100vw' }}> 
+            <div> 
                 <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'/>
             </div>
 

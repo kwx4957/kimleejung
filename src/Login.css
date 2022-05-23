@@ -21,11 +21,11 @@
         }
     }
     .sns-in{
-        width : 700px;
-        height: 500px;
-        border: 1px solid rgb(0, 174, 255);
-        left:35%;
-        top:25%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
     .tit{
     font-size: 50px;

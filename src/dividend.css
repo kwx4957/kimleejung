@@ -12,7 +12,7 @@
             top:1px;
          }
          .ex_divide {
-            width: 150;
+            width: 300px;
             display:flex;
             height: 50px;
             position:absolute;
@@ -27,24 +27,69 @@
   margin: auto;
   display:block;
   position:fixed;
-  left: 1400px;
-  top:10px;
 }
 
 .Board {
-  width: 40px;
-  height: 40px;
-  display:flex;
-  position:absolute;
+  background-color:transparent;
+  width: 35px;
+  height: 35px;
+  position:fixed;
   left:85%;
-  top:10px;
+  top:1%;
 }
 
 .Board_Text{
-  background-color:transparent;
   border: 0;
-  margin: auto;
   position:fixed;
-  left: 1410px;
-  top:65px;
+  left: 84.8%;
+  top:5.5%;
+}
+
+.Dividend-header{
+  height: 75px;
+  width: 100%;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  background: rgba(168, 255, 255, 0.409);
+  font-weight: bold;
+  display: flex;
+  position:fixed;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position:fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+}
+
+.gr{
+  display:contents;
+}
+.gr1{
+  width:600px;
+  height:auto;
+  font-size: 15px;
+  display:block;
+}
+.gr-title{
+  margin-top: 90px;
+  font-size: 20px;
+  display:grid;
+}
+
+.gr2{
+  display:grid;
+  font-size: 20px
+}
+
+.gr3{
+  width: 600px;
+  height: auto;
+}
+
+.cal{
+  font-size: 15px;
+  font-weight: lighter;
 }

@@ -5,7 +5,6 @@ import axios from 'axios';
 import dayjs from 'dayjs';
 import 'dayjs/locale/ko';
 import Board from './Board' ;
-import { Routes, Route, useNavigate } from "react-router-dom";
 
 import { 
   LineChart, 
@@ -130,7 +129,9 @@ const Dividend = () => {
   return (
     <>
       {/* 로고 위치 및 크기 지정 */}
-      <div style={{ width: '100vw' }}> 
+      
+      <div className='Dividend-header'>
+      <div> 
         <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'/>
         {/* 회사명 */}
         <p className="company-name">{ state.company }</p>
@@ -143,20 +144,15 @@ const Dividend = () => {
         <span className="Board_Text">게시판</span>
       </button>
     </from>
+    </div>
       {/* mo_main 그래프*/}
-      <h4>간단한 주가 선 차트</h4>
-      <ResponsiveContainer width="50%" aspect={2}>
+
+<div className='gr'>
+  <div className='gr1'>
+    <p className='gr-title'>*____간단한 주가 선 차트____*</p>
+      <ResponsiveContainer aspect={2}>
         <LineChart
-          width={500}
-          height={300}
-          data={data}
-          margin={{
-            top: 1,
-            right: 50,
-            left: 10,
-            bottom: 5,
-          }}
-        >
+          data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
@@ -165,14 +161,21 @@ const Dividend = () => {
           <Line type="monotone" dataKey="주가" stroke="#50bcdf" />
         </LineChart>
       </ResponsiveContainer><br/>
-      
+      </div>
+
+  <div className='gr2'>
       <span>배당락 기준일 : { dayjs(sortData(apis)[sortData(apis).length - 1].dvdnBasDt).format('YYYY년 MM월 DD일') }</span>
       <span>배당 지급일 : { dayjs(sortData(apis)[sortData(apis).length - 1].cashDvdnPayDt).format('YYYY년 MM월 DD일') }</span>
       <span>1주당 배당금 : {sortData(apis)[sortData(apis).length - 1].stckGenrCashDvdnRt}원</span>
-      
-      <InputSample api={sortData(apis)[sortData(apis).length - 1].stckGenrCashDvdnRt}/>
+  </div>
 
-      <div style={{ width: '50vw' }}>
+      {/*예상 배당금 계산*/}
+     <div className='cal'> 
+      <InputSample api={sortData(apis)[sortData(apis).length - 1].stckGenrCashDvdnRt}/>
+     </div>
+
+
+ <div className='gr3'>
         <Bar options={options} data={{
           labels: sortData(apis).map(v => dayjs(v.cashDvdnPayDt).format('YYYY년 MM월 DD일')),
           datasets: [
@@ -183,7 +186,8 @@ const Dividend = () => {
             },
           ],
         }}/>
-      </div>
+  </div>
+</div>
     </>
   );
 }

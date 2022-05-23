@@ -35,33 +35,6 @@
     top:10px;
   }
 
-.Board_Botton{
-  background-color:transparent;
-  border: 0;
-  margin: auto;
-  display:block;
-  position:fixed;
-  left: 1400px;
-  top:10px;
-}
-
-.Board {
-  width: 40px;
-  height: 40px;
-  display:flex;
-  position:absolute;
-  left:85%;
-  top:10px;
-}
-
-.Board_Text{
-  background-color:transparent;
-  border: 0;
-  margin: auto;
-  position:fixed;
-  left: 1410px;
-  top:65px;
-}
 
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
@@ -89,7 +62,7 @@
   /*배경 색상*/
   background-color: #ffffff;
   /*요소 최대 세로 너비 지정*/
-  min-height: 100vh;
+
    /*레이아웃 배치*/
   display: flex;
   /*요소 위에서 아래로 정렬*/
@@ -121,11 +94,11 @@
   .search_list{
     border: 3px solid rgb(1, 6, 87);
     position: fixed;
-    top: 594px;
+    top: 593px;
     left: 685px;
     width: 480px;
-    display: -webkit-box;
-    padding: 0.5px;
+    display:-webkit-box;
+    padding: 1px;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -139,16 +112,16 @@
   }
   
   .App-Search{
-    padding: 13px 15px;
-    margin: 1px;
     position: fixed;
     top:550px;
     left: 1220px;
     top:540px;
+    padding: 13px 15px;
+    margin: 1px;
     left: 655px;
-    width: 550px;
+    width: 551px;
     height: 60px;
-    border-width: 7px;
+    border-width: 8px;
     border-style:solid;
     border-color: rgb(1, 6, 87);
     border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px; 
