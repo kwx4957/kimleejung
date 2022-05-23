@@ -97,6 +97,7 @@ const onBoard = (e) => {
         </form>
 <div  className="search_list">
           {/*검색 기능*/}
+      
           {JSONDATA.filter((val)=> {
             if (searchTerm === ""){
               return null

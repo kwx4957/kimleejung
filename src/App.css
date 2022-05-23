@@ -121,11 +121,11 @@
   .search_list{
     border: 3px solid rgb(1, 6, 87);
     position: fixed;
-    top: 593px;
+    top: 594px;
     left: 685px;
     width: 480px;
     display: -webkit-box;
-    padding: 1px;
+    padding: 0.5px;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -139,6 +139,8 @@
   }
   
   .App-Search{
+    padding: 13px 15px;
+    margin: 1px;
     position: fixed;
     top:550px;
     left: 1220px;
