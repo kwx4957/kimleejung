@@ -1,6 +1,7 @@
 import './Login.css';
 import React from 'react';
 import { Routes, Route, useNavigate } from "react-router-dom";
+
 function Login () {
     
     return (
@@ -21,7 +22,8 @@ function Home() {
             <div> 
                 <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'/>
             </div>
-
+            
+            {/*로그인*/}
             <from className='sns-in'>
                 <div class="sns_login_wrap"><div class="tit">SNS 로그인</div>
                 <div class="sns_list">
