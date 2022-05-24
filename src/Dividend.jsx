@@ -1,6 +1,6 @@
 import './dividend.css';
 import React, { useEffect, useState } from 'react';
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate,Routes, Route } from "react-router-dom";
 import axios from 'axios';
 import dayjs from 'dayjs';
 import 'dayjs/locale/ko';
@@ -80,11 +80,37 @@ const data = [
   },
 ];
 
+
+function App() {
+  return (
+    <>    
+          <div className="App App-header">
+            <Routes>
+              <Route path="/" element={<Dividend/>} />
+            </Routes>
+            
+            <Routes>
+              <Route path="/board" element={<Board/>} />
+            </Routes>
+
+          </div>
+    </>
+  );
+}
+
+
+
 const Dividend = () => {
+  const navigate = useNavigate();
   const { state } = useLocation();
   const [error, setError] = useState();
   const [apis, setApi] = useState();
   const [loading, setLoading] = useState();
+
+  const onBoard = (e) => {
+    e.preventDefault();
+    navigate('/board');
+  }
 
   const sortData = (data) => {
     return data.sort((a, b) => {
@@ -126,6 +152,8 @@ const Dividend = () => {
   if (loading) return <div>로딩중..</div>;
   if (error) return <div>에러가 발생했습니다</div>;
   if (!apis) return null;
+
+  
   return (
     <>
       {/* 로고 위치 및 크기 지정 */}
@@ -137,13 +165,13 @@ const Dividend = () => {
         <p className="company-name">{ state.company }</p>
       </div>
       
-      <from onSubmit={Board}>
+      <form onSubmit={onBoard}>
       {/*게시판*/}
       <button className="Board_Botton">
         <img src="board.png" className='Board' alt="게시판"/><br/>
         <span className="Board_Text">게시판</span>
       </button>
-    </from>
+    </form>
     </div>
       {/* mo_main 그래프*/}
 
@@ -192,4 +220,4 @@ const Dividend = () => {
   );
 }
 
-export default Dividend;
+export default App;
