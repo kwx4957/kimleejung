@@ -5,12 +5,11 @@ import { Routes, Route } from "react-router-dom";
 function Borad () {
     return (
         <>
-        
-        <div className="App App-header">
+          <div className="App App-header">
             <Routes>
                 <Route path="/" element={<Home />}/>
             </Routes>
-        </div>
+            </div>
         </>
     );
 }
