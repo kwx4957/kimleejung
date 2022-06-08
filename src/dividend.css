@@ -36,6 +36,7 @@
   position:fixed;
   left:85%;
   top:1%;
+  cursor: pointer;
 }
 
 .Board_Text{

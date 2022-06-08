@@ -15,6 +15,7 @@
     position:fixed;
     left: 1535px;
     top:10px;
+    cursor: pointer;
   }
 
 .Login_Text{
@@ -136,6 +137,7 @@
       height: 50px;
       top:550px;
       left: 1220px;
+      cursor: pointer;
   }
     
   @keyframes App-logo-spin {
@@ -165,6 +167,7 @@
   position:fixed;
   left:1850px;
   top:500px;
+  cursor: pointer;
 }
 
 .TOP {    
@@ -178,4 +181,5 @@
   display:flex;
   position:absolute;
   top:500px;
+  cursor: pointer;
 }
