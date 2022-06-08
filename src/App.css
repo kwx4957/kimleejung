@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  }
+}
   
   .App-logo {
     height: 40vmin;
@@ -13,16 +13,16 @@
     margin: auto;
     display:block;
     position:fixed;
-    left: 1500px;
+    left: 1535px;
     top:10px;
-}
+  }
 
 .Login_Text{
   background-color:transparent;
   border: 0;
   margin: auto;
   position:fixed;
-  left: 1515px;
+  left: 1550px;
   top:65px;
 }
 
@@ -48,14 +48,6 @@
     }
   }
   
-  .search_button{
-    background-color:transparent;
-    border: 0;
-    width: 50px;
-    height: 50px;
-    top:580px;
-    
-}
 
 .App-header {
   
@@ -125,8 +117,8 @@
     border-style:solid;
     border-color: rgb(1, 6, 87);
     border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px; 
-
     }
+
     .App-button{
       position: fixed;
       top:550px;
@@ -135,6 +127,15 @@
       border: 0;
       width: 50px;
       height: 50px;
+     }
+
+     .search_button{
+      background-color:transparent;
+      border: 0;
+      width: 50px;
+      height: 50px;
+      top:550px;
+      left: 1220px;
   }
     
   @keyframes App-logo-spin {

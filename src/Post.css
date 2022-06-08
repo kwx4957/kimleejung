@@ -1,9 +1,9 @@
-.borad {
+.post {
     text-align: center;
     }
 
     @media (prefers-reduced-motion: no-preference) {
-        .borad-logo {
+        .post-logo {
             width: 140px;
             display:flex;
             height: 50px;
@@ -11,7 +11,7 @@
             left:0px;
             top:1px;
         }
-        .ex_borad {
+        .ex_post {
             width: 150;
             display:flex;
             height: 50px;
@@ -20,12 +20,3 @@
             top:700px;
         }
     }
-    .Post_Botton{
-        background-color:transparent;
-        border: 2;
-        margin: auto;
-        display:block;
-        position:fixed;
-        left: 1800px;
-        top:900px;
-      }

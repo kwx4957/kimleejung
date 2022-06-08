@@ -24,38 +24,36 @@ function Home() {
             </div>
             
             {/*로그인*/}
-            <div className="sns-side">
-                <from className='sns-in'>
-                    <div class="sns_login_wrap"><div class="tit">SNS 로그인</div>
-                    <div class="sns_list">
-                        <ul>
-                            <button className="Naver_Button">
-                                <a href="javascript:void(0);">
-                                    <span class="logo">
-                                        <img src="naver_long.png" alt="네이버"/>
-                                    </span>
-                                </a><br/>
-                            </button>
-                            <button className="Kakao_Button">
-                                <a href="javascript:void(0);">
-                                    <span class="logo">
-                                        <img src="kakao_long.png" alt="카카오톡"/>
-                                    </span>
-                                </a><br/>
-                            </button>
-                            <button className="Gooogle_Button">
-                                <a href="javascript:void(0);">
-                                    <span class="logo">
-                                        <img src="google_long.png" alt="구글"/>
-                                    </span>
-                                </a><br/>
-                            </button>
-                        </ul>
-                        
-                        </div>
+            <from className='sns-in'>
+                <div class="sns_login_wrap"><div class="tit">SNS 로그인</div>
+                <div class="sns_list">
+                    <ul>
+                        <button className="Naver_Button">
+                            <a href="javascript:void(0);">
+                                <span class="logo">
+                                    <img src="naver_long.png" alt="네이버"/>
+                                </span>
+                            </a><br/>
+                        </button>
+                        <button className="Kakao_Button">
+                            <a href="javascript:void(0);">
+                                <span class="logo">
+                                    <img src="kakao_long.png" alt="카카오톡"/>
+                                </span>
+                            </a><br/>
+                        </button>
+                        <button className="Gooogle_Button">
+                            <a href="javascript:void(0);">
+                                <span class="logo">
+                                    <img src="google_long.png" alt="구글"/>
+                                </span>
+                            </a><br/>
+                        </button>
+                    </ul>
+                    
                     </div>
-                </from>
-            </div>
+                </div>
+            </from>
 
         </>
     )

@@ -109,6 +109,8 @@ const onBoard = (e) => {
 
         <div className='nav' style={isNav?{display:"block"}:{display:'none'}}>
           
+          
+
           {/*sample data*/}
           <h1>배당률 TOP 10</h1>
           <ul>1순위, 기업 명, n%</ul>

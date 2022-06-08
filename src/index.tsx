@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Dividend from './Dividend'
+import Borad from './Board';
+import Post from './Post';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
+
 
 ReactDOM.render(
   <BrowserRouter>
     <App />
     <Dividend/>
+    <Borad/>
+    {/* <Post/> */}
   </BrowserRouter>,
   document.getElementById('root')
 );
