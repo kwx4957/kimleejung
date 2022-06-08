@@ -32,13 +32,12 @@ function Home() {
             <div> 
                 <img src="kimleejung_logo.png"  className="borad-logo" alt='borad'/>
             </div>
-
-            <form onSubmit={onPost}>
-            {/* 로그인 */}
-            <button className="Post_Botton">
-                글쓰기
-            </button>
-            </form>
+            {/* 글쓰기 버튼 */}
+            {/* <form onSubmit={onPost}>
+                <button className="Post_Botton">
+                    글쓰기
+                </button>
+            </form> */}
         </>
     )
 }

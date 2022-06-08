@@ -75,7 +75,7 @@ const onBoard = (e) => {
         <img src="kimleejung_letterlogo.png" className="App-size" alt='logoName'></img>
       </div>
     
-      {/*검색창*/}
+        {/*검색창*/}
         <form onSubmit={onSubmit}>
           <input type="search" className="App-Search" placeholder="기업명을 입력하시오." id="Enterprise" value={searchTerm} onChange={event => {setSearchTerm(event.target.value)}}/>
          
@@ -84,7 +84,7 @@ const onBoard = (e) => {
             <img src="button.png" className="App-button" alt='버튼 이미지' />
           </button>
         </form>
-<div  className="search_list">
+        <div  className="search_list">
           {/*검색 기능*/}
           {JSONDATA.filter((val)=> {
             if (searchTerm === ""){
@@ -98,7 +98,8 @@ const onBoard = (e) => {
               <p> {val.company} </p>
             </div>
             );
-          })}</div>
+          })}
+        </div>
 
         {/* 기업순위 */}
         <form onSubmit={onSide}>
