@@ -23,6 +23,7 @@
         left : 750px;
         font-size: 30px;
         padding: 20px;
+        cursor: pointer;
       }
 
       .board_list{
