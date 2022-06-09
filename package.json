@@ -1,28 +1,21 @@
 {
-  "name": "kim",
+  "name": "kimleejung2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.6",
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
-    "axios": "^0.24.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
     "chart.js": "^3.8.0",
-    "dayjs": "^1.10.7",
-    "faker": "^5.5.3",
-    "query-string": "^7.0.1",
-    "react": "^17.0.2",
-    "react-chartjs-2": "^4.0.0",
-    "react-dom": "^17.0.2",
+    "dayjs": "^1.11.3",
+    "react": "^18.1.0",
+    "react-chartjs-2": "^4.2.0",
+    "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "4.0.3",
-    "rechart": "^0.0.1",
+    "react-scripts": "5.0.1",
     "recharts": "^2.1.10",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,9 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "typescript": "^4.4.4"
   },
   "proxy": "http://apis.data.go.kr/1160100/service/GetStocDiviInfoService"
 }
