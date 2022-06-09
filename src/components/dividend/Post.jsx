@@ -1,9 +1,8 @@
-
+import './Post.css';
 
 const Post = () => {
     return(
-
-        <div>
+        <div className='Write'>
             <div className='title'>
                 <p> </p>
             </div>
@@ -26,7 +25,7 @@ const Post = () => {
 
             {/* 등록버튼 */}
             <div className='button' >
-                <button> 포스트 등록</button>
+                <button>글쓰기 등록</button>
             </div>
         </div>
         
