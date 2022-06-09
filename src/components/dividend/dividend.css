@@ -94,3 +94,9 @@
   font-size: 15px;
   font-weight: lighter;
 }
+
+.loading{
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+}

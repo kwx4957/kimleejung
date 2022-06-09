@@ -10,7 +10,7 @@ const Login = () => {
             
             {/*로그인*/}
             <from className='sns-in'>
-                <div class="sns_login_wrap"><div class="tit">SNS 로그인</div>
+                <div class="sns_login_wrap"><div class="tit" className="tit">SNS 로그인</div>
                 <div class="sns_list">
                     <ul>
                         <button className="Naver_Button">

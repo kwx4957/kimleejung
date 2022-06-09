@@ -125,15 +125,14 @@ const Dividend = () => {
       fetchUsers();
     }, [state]);
   
-    if (loading) return <div>로딩중..</div>;
-    if (error) return <div>에러가 발생했습니다</div>;
+    if (loading) return <div className="loading">로딩중..</div>;
+    if (error) return <div className="loading">에러가 발생했습니다</div>;
     if (!apis) return null;
   
     
     return (
       <>
-        로고 위치 및 크기 지정
-        
+        {/* 로고 위치 및 크기 지정 */}
         <div className='Dividend-header'>
         <div> 
           <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'/>
