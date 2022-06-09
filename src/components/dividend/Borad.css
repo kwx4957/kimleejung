@@ -3,23 +3,29 @@
     }
 
    
+    .borad-llogo {
+        width: 200px;
+        height: 70px;
+        margin-top: 50px;
+        padding-right: 10px;
+        margin-left: 100px;
+    }
 
-        .ex_borad {
-            width: 150;
-            display:flex;
-            height: 50px;
-            position:absolute;
-            left:630px;
-            top:700px;
-        }
     
     .Post_Botton{
         background-color:transparent;
-        border: 2;
-        margin: auto;
-        display:block;
+
+        float:left;
+        margin-left: 150px;
+        margin-top: 50px;
         position:fixed;
-        left: 1800px;
-        top:900px;
-        cursor: pointer;
+        top : 750px;
+        left : 750px;
+        font-size: 30px;
+        padding: 20px;
+      }
+
+      .board_list{
+          padding-left: 150px;
+          width: 100%;
       }
