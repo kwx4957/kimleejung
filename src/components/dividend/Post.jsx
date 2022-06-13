@@ -1,6 +1,14 @@
 import './Post.css';
+import { useNavigate } from "react-router-dom";
 
 const Post = () => {
+    const navigate = useNavigate();
+
+    const onBoard = (e) => {
+        e.preventDefault();
+        navigate('/board');
+      }
+    
     return(
         <div className='Write'>
             <div className='title'>
@@ -24,9 +32,11 @@ const Post = () => {
             </div>
 
             {/* 등록버튼 */}
-            <div className='button' >
-                <button>글쓰기 등록</button>
-            </div>
+            <form onSubmit={onBoard}>
+                <div className='button' >
+                    <button>글쓰기 등록</button>
+                </div>
+            </form>
         </div>
         
       );
