@@ -152,7 +152,7 @@ const Dividend = () => {
   
   <div className='gr'>
     <div className='gr1'>
-      <p className='gr-title'>*____간단한 주가 선 차트____*</p>
+      <p className='gr-title'>주가 선 차트</p>
         <ResponsiveContainer aspect={2}>
           <LineChart
             data={data}>
