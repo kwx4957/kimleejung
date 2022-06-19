@@ -2,11 +2,16 @@ import '../../App.css';
 import JSONDATA from '../../assets/DATA.json'
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
+import axios from 'axios';
 
 const Home = () => {
     const navigate = useNavigate();
     const [searchTerm, setSearchTerm] = useState('');
-    const [isNav,setNav]=useState(false)
+    const [isNav,setNav]=useState(false);
+    const [loading, setLoading] = useState(false);
+    const [firstRun, setFirstRun] = useState(false);
+    const [itemList, setItemList] = useState([]);
   
     const onSubmit = (e) => {
       e.preventDefault();
@@ -20,13 +25,39 @@ const Home = () => {
       e.preventDefault();
       navigate('/login');
     }
-  
-    
     const onSide = (e) => {
     e.preventDefault();
     setNav((prev) => !prev)
   }
+
+  useEffect(() => {
+    console.log("itemList", itemList);
+  }, [itemList]);
   
+  useEffect(() => {
+    if (!firstRun) {
+      setFirstRun(true);
+      const fetchUsers = async () => {
+        try {
+          setLoading(true);
+          const res = await axios.get('/GetDiscInfoService/getDiviDiscInfo?pageNo=1&numOfRows=20000&resultType=json&serviceKey=LxT%2B%2BKVSdbvMJ5%2FPf9MPc3poMWk5E62s7tCmFnGkbHUwPidtHpQvdcP3rt5ST4C9h01d4K5GJDmeQlKaSQhO3g%3D%3D');
+          const data = res.data.response.body.items.item;
+          const dataArr = data.filter((item) => item.pvtrOnskCashDvdnBnfRt !== "0" && item.basDt.includes("2021"))
+          dataArr.sort((a, b) => {
+            return parseFloat(b.pvtrOnskCashDvdnBnfRt) - parseFloat(a.pvtrOnskCashDvdnBnfRt)
+          });
+          console.log(dataArr);
+          const cuttedData = dataArr.splice(0, 10)
+          setItemList(cuttedData);
+          setLoading(false);
+        } catch (e) {
+          console.error(e)
+          setLoading(false);
+        }
+      };
+      fetchUsers();
+    }
+  }, []);
   
     return (
       <>
@@ -85,16 +116,13 @@ const Home = () => {
   
             {/*sample data*/}
             <h1>배당률 TOP 10</h1>
-            <ul>1순위, 기업 명, n%</ul>
-            <ul>2순위, 기업 명, n%</ul>
-            <ul>3순위, 기업 명, n%</ul>
-            <ul>4순위, 기업 명, n%</ul>
-            <ul>5순위, 기업 명, n%</ul>
-            <ul>6순위, 기업 명, n%</ul>
-            <ul>7순위, 기업 명, n%</ul>
-            <ul>8순위, 기업 명, n%</ul>
-            <ul>9순위, 기업 명, n%</ul>
-            <ul>10순위, 기업 명, n%</ul>
+            {loading ? <div className="Side_text">로딩중...</div> 
+            : <ul>
+              {itemList.map((item, index) => (
+                <li key={item.crno}>{`${index + 1}순위, 배당률: ${item.pvtrOnskCashDvdnBnfRt}, 기업번호: ${item.crno}`}</li>
+              ))}
+            </ul>
+            }
             
             <form onSubmit={onSide}>
               <button className="Side_Button">

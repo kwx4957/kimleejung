@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://apis.data.go.kr/1160100/service/GetStocDiviInfoService"
+  "proxy": "http://apis.data.go.kr/1160100/service"
 }
