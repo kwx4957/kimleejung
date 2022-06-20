@@ -5,7 +5,13 @@ const Login = () => {
         <>
             {/* 로고 위치 및 크기 지정 */}
             <div> 
-                <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'/>
+                <button className="Home">
+                <a href='http://localhost:3000'>
+                    <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'>
+                        {/* <a href='http://localhost:3000'/> */}
+                    </img>
+                </a>
+                </button>
             </div>
             
             {/*로그인*/}

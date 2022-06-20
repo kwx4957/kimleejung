@@ -49,3 +49,20 @@
         display : flex;
         font-size: 30px;
     }
+    .Home{
+        width: 140px;
+        display:flex;
+        height: 50px;
+        position:absolute;
+        left:0px;
+        top:1px;
+        background-color:transparent;
+        border: 0;
+    }
+    .txt{
+        font-size: 30px;
+    }
+    .txt_button{
+        width: 20x;
+        height: 10px;
+    }

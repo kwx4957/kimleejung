@@ -10,35 +10,45 @@ const Post = () => {
       }
     
     return(
-        <div className='Write'>
-            <div className='title'>
-                <p> </p>
+        <>
+            <div> 
+                <button className="Home">
+                    <a href='http://localhost:3000'>
+                        <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'>
+                            {/* <a href='http://localhost:3000'/> */}
+                        </img>
+                    </a>
+                </button>
             </div>
-
-            <div className='title1'> 
-                <img src="kimleejung_minilogo.png"  className="borad-logo" alt='borad'/>
-                <p>글쓰기</p>
-            </div>
-
-
-            <div>
-                {/* 제목 */}
-                <input type='text' id='title_txt' placeholder='제목'/>
-            </div>
-                
-            <div>
-                {/* 내용 */}
-                <textarea id='content_txt' placeholder='내용을 입력하세요.'></textarea>
-            </div>
-
-            {/* 등록버튼 */}
-            <form onSubmit={onBoard}>
-                <div className='button' >
-                    <button>글쓰기 등록</button>
+            <div className='Write'>
+                <div className='title'>
+                    <p> </p>
                 </div>
-            </form>
-        </div>
-        
+
+                <div className='title1'> 
+                    <img src="kimleejung_minilogo.png"  className="borad-logo" alt='borad'/>
+                    <p>글쓰기</p>
+                </div>
+
+
+                <div>
+                    {/* 제목 */}
+                    <input type='text' id='title_txt' placeholder='제목' className="txt"/>
+                </div>
+                    
+                <div>
+                    {/* 내용 */}
+                    <textarea id='content_txt' placeholder='내용을 입력하세요.' className="txt"/>
+                </div>
+
+                {/* 등록버튼 */}
+                <form onSubmit={onBoard}>
+                    <div className='txt_button' >
+                        <button>글쓰기 등록</button>
+                    </div>
+                </form>
+            </div>
+        </>
       );
 }
 

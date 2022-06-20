@@ -30,3 +30,16 @@
           padding-left: 150px;
           width: 100%;
       }
+      .Home{
+        width: 140px;
+        display:flex;
+        height: 50px;
+        position:absolute;
+        left:0px;
+        top:1px;
+        background-color:transparent;
+        border: 0;
+    }
+    .list{
+        font-size: 30px;
+    }

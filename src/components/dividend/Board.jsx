@@ -15,7 +15,13 @@ const Board = () => {
             
             {/* 로고 위치 및 크기 지정 */}
             <div> 
-                <img src="kimleejung_logo.png" className="borad-llogo" alt='borad'/>
+                <button className="Home">
+                <a href='http://localhost:3000'>
+                    <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'>
+                        {/* <a href='http://localhost:3000'/> */}
+                    </img>
+                </a>
+                </button>
             </div>
             <div style={{  padding: "50px 12px" }}>
                <table className="board_list">

@@ -111,3 +111,13 @@
   line-height: 100px;
   text-align: center;
 }
+.Home{
+  width: 140px;
+  display:flex;
+  height: 50px;
+  position:absolute;
+  left:0px;
+  top:1px;
+  background-color:transparent;
+  border: 0;
+}

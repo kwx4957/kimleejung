@@ -134,11 +134,19 @@ const Dividend = () => {
       <>
         {/* 로고 위치 및 크기 지정 */}
         <div className='Dividend-header'>
-        <div> 
-          <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'/>
-          {/* 회사명 */}
-          <p className="company-name">{ state.company }</p>
-        </div>
+          <div> 
+            <div> 
+                <button className="Home">
+                    <a href='http://localhost:3000'>
+                        <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'>
+                            {/* <a href='http://localhost:3000'/> */}
+                        </img>
+                    </a>
+                </button>
+              </div>
+            {/* 회사명 */}
+            <p className="company-name">{ state.company }</p>
+          </div>
         
         <form onSubmit={onBoard}>
         {/*게시판*/}
