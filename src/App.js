@@ -2,11 +2,13 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
-import HeaderComponent from './components/common/HeaderComponent';
+
 import Dividend from './components/dividend';
 import Login from './components/login';
 import Board from './components/dividend/Board';
 import Post from './components/dividend/Post';
+import User from "./components/User";
+import Auth from "./components/login/Auth";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/board" element={<Board/>} />
           <Route path="/post" element={<Post/>} />
+          <Route path="/oauth/kakao/callback" element={<Auth/>} />
+          <Route path="/user" element={<User/>} /> 
         </Routes>
       </BrowserRouter>
     </>

@@ -1,8 +1,7 @@
 import '../../App.css';
 import JSONDATA from '../../assets/DATA.json'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from 'react';
 import axios from 'axios';
 
 const Home = () => {
@@ -25,6 +24,7 @@ const Home = () => {
       e.preventDefault();
       navigate('/login');
     }
+    
     const onSide = (e) => {
     e.preventDefault();
     setNav((prev) => !prev)
@@ -111,9 +111,6 @@ const Home = () => {
           </form>
   
           <div className='nav' style={isNav?{display:"block"}:{display:'none'}}>
-            
-            
-  
             {/*sample data*/}
             <h1>배당률 TOP 10</h1>
             {loading ? <div className="Side_text">로딩중...</div> 

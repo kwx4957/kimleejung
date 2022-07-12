@@ -1,6 +1,17 @@
 import './Login.css';
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+    const REST_API_KEY = "2bfe8ae0660ba533d909f87f234194bb";
+    const REDIRECT_URI = "http://localhost:3000/oauth/kakao/callback";
+    const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+    
+    const navigate = useNavigate();
+    const onKakao = (e) => {
+        e.preventDefault();
+        navigate(KAKAO_AUTH_URL);
+    }    
+
     return (
         <>
             {/* 로고 위치 및 크기 지정 */}
@@ -31,21 +42,12 @@ state=4ohD4Popsj5URbo3AQxvG4m30DpB0l3JZN3GEJXxcmQ_XNz4dce2A5TPUGh5SSvWbMfR9VIJvI
                                 </span>
                             </a><br/>
                         </button>
-                        <button className="Kakao_Button">
-                            <a href="https://kauth.kakao.com/oauth/authorize?
-client_id=497431094a264e24b995a0bd5178900a&
-state=d3cfa0e1d3c844ef0cd959a52d7451a9aa6aeaa4&
-redirect_uri=http://localhost:3000/&
-response_type=code&auth_tran_id=s8fnrlxcl98a432f563a20ec43eb463878d3c627079l4lcfkmw&
-ka=sdk%2F1.42.0%20os%2Fjavascript%20sdk_type%2Fjavascript%20lang%2Fko-KR%20device%2FWin32%20origin%2Fhttps%253A%252F%252Fhttp://localhost:3000/&
-is_popup=false">
-    <span class="logo">
-        <img src="kakao_long.png" alt="카카오톡"/>
-        </span>
-        </a>
-        <br/>
-        
-        </button>
+                        {/*카카오*/}
+                        <button className="Kakao_Button" onClick={onKakao}>
+                            <span class="logo">
+                                 <img src="kakao_long.png" alt="카카오톡"/>
+                            </span><br/>
+                        </button>
                         <button className="Gooogle_Button">
                             <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=profile%20email&response_type=code
 &client_id=332438887894-2kshusdiltq94dk66ebpeh0cjh1ihf6e.apps.googleusercontent.com&
