@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const REST_API_KEY = "2bfe8ae0660ba533d909f87f234194bb";
-    const REDIRECT_URI = "http://localhost:3000/oauth/kakao/callback";
+    const REDIRECT_URI = "http://localhost:3000";
     const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
     
     const navigate = useNavigate();
     const onKakao = (e) => {
         e.preventDefault();
-        navigate(KAKAO_AUTH_URL);
+        window.location.replace(KAKAO_AUTH_URL);
     }    
 
     return (
@@ -30,7 +30,8 @@ const Login = () => {
                 <div class="sns_login_wrap"><div class="tit" className="tit">SNS 로그인</div>
                 <div class="sns_list">
                     <ul>
-                        <button className="Naver_Button">
+                        {/*네이버*/}
+                        <button className="Naver_Button">r
                             <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&
 svctype=0&
 client_id=oLAu1GlBdKO6bRxivhQ2&
@@ -48,6 +49,7 @@ state=4ohD4Popsj5URbo3AQxvG4m30DpB0l3JZN3GEJXxcmQ_XNz4dce2A5TPUGh5SSvWbMfR9VIJvI
                                  <img src="kakao_long.png" alt="카카오톡"/>
                             </span><br/>
                         </button>
+                        {/*구글*/}
                         <button className="Gooogle_Button">
                             <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=profile%20email&response_type=code
 &client_id=332438887894-2kshusdiltq94dk66ebpeh0cjh1ihf6e.apps.googleusercontent.com&

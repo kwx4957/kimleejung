@@ -5,9 +5,9 @@ import qs from "qs";
 import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
-  const REST_API_KEY = "efa63d774bf94d489920b4d4633f11ee";
-  const REDIRECT_URI = "http://localhost:3000/oauth/kakao/callback";
-  const CLIENT_SECRET = "aw4xOd79BOGywPbOe4RQbw7Cl2VZUG4N";
+  const REST_API_KEY = "2bfe8ae0660ba533d909f87f234194bb";
+  const REDIRECT_URI = "http://localhost:3000";
+  const CLIENT_SECRET = "OoYFaoIg0L75LlWD39OljEo8McPpxurB";
 //  calllback으로 받은 인가코드
   const code = new URL(window.location.href).searchParams.get("code");
   const navigate = useNavigate();
