@@ -8,8 +8,8 @@ import Login from './components/login';
 import Board from './components/dividend/Board';
 import Post from './components/dividend/Post';
 import User from "./components/User";
-import Auth from "./components/login/Auth";
-
+import Auth_Kakao from "./components/login/Auth_Kakao";
+import Auth_Naver from "./components/login/Auth_Naver";
 function App() {
   return (
     <>
@@ -23,7 +23,8 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/board" element={<Board/>} />
           <Route path="/post" element={<Post/>} />
-          <Route path="/oauth/kakao/callback" element={<Auth/>} />
+          <Route path="/oauth/kakao/callback" element={<Auth_Kakao/>} />
+          <Route path='/naver' component={<Auth_Naver/>} />
           <Route path="/user" element={<User/>} /> 
         </Routes>
       </BrowserRouter>

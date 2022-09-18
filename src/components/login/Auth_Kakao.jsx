@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
   const REST_API_KEY = "2bfe8ae0660ba533d909f87f234194bb";
-  const REDIRECT_URI = "http://localhost:3000";
+  const REDIRECT_URI = "http://localhost:3000/user";
   const CLIENT_SECRET = "OoYFaoIg0L75LlWD39OljEo8McPpxurB";
 //  calllback으로 받은 인가코드
   const code = new URL(window.location.href).searchParams.get("code");

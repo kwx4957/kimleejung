@@ -1,5 +1,218 @@
-.size{
-    width: 70%;
-    height: 80vh;
+.App {
+    text-align: center;
+  }
     
+.App-logo {
+    height: 40vmin;
+  pointer-events: none;
 }
+  
+.Logout_Button{
+    background-color:transparent;
+    border: 0;
+    margin: auto;
+    display:block;
+    position:fixed;
+    left: 1535px;
+    top:10px;
+    cursor: pointer;
+    }
+  
+  .Logout_Text{
+    background-color:transparent;
+    border: 0;
+    margin: auto;
+    position:fixed;
+    left: 1550px;
+    top:65px;
+  }
+  
+    .Logout {
+      width: 40px;
+      height: 40px;
+      display:flex;
+      position:absolute;
+      left:95%;
+      top:10px;
+    }
+  
+    .Info_Button{
+        background-color:transparent;
+        border: 0;
+        margin: auto;
+        display:block;
+        position:fixed;
+        left: 1535px;
+        top:10px;
+        cursor: pointer;
+      }
+    
+    .Info_Text{
+      background-color:transparent;
+      border: 0;
+      margin: auto;
+      position:fixed;
+      left: 1550px;
+      top:65px;
+    }
+    
+      .Info {
+        width: 40px;
+        height: 40px;
+        display:flex;
+        position:absolute;
+        left:95%;
+        top:10px;
+      }
+  
+    @media (prefers-reduced-motion: no-preference) {
+      .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        width: 200px;
+        height: 180px;
+        position: fixed;
+        top: 300px;
+        left: 650px;
+        
+      }
+    }
+    
+  
+  .App-header {
+    
+    /*배경 색상*/
+    background-color: #ffffff;
+    /*요소 최대 세로 너비 지정*/
+  
+     /*레이아웃 배치*/
+    display: flex;
+    /*요소 위에서 아래로 정렬*/
+    flex-direction: column;
+    /*요소 세로선 상의 가운데 정렬*/
+    align-items: center;
+    /*요소 가운데 정렬*/
+    justify-content: center;
+    /*글자 크기 및 색상 지정*/
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+  }
+  
+  
+   /* .App-header2{
+     position: fixed;
+     top: 555px;
+     left: 680px;
+     display: -webkit-box;
+     /* 테두리 도전?
+     padding: 1px;
+     border: 1px solid red;
+     width: 500px;
+     -webkit-line-clamp: 6;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+   } */
+  
+    .search_list{
+      border: 3px solid rgb(1, 6, 87);
+      position: fixed;
+      top: 593px;
+      left: 685px;
+      width: 480px;
+      display:-webkit-box;
+      padding: 1px;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  
+    .App-size{
+      position: fixed;
+      top: 300px;
+      left: 860px;
+      width: 350px;
+    }
+    
+    .App-Search{
+      position: fixed;
+      top:550px;
+      left: 1220px;
+      top:540px;
+      padding: 13px 15px;
+      margin: 1px;
+      left: 655px;
+      width: 551px;
+      height: 60px;
+      border-width: 8px;
+      border-style:solid;
+      border-color: rgb(1, 6, 87);
+      border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px; 
+      }
+  
+      .App-button{
+        position: fixed;
+        top:550px;
+        left: 1220px;
+        background-color:transparent;
+        border: 0;
+        width: 50px;
+        height: 50px;
+       }
+  
+       .search_button{
+        background-color:transparent;
+        border: 0;
+        width: 50px;
+        height: 50px;
+        top:550px;
+        left: 1220px;
+        cursor: pointer;
+    }
+      
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    /*기업순위*/
+    .nav{
+      display: none;
+      width: 300px;
+      background-color:aliceblue;
+      height: 100vh;
+      position: fixed;
+      right: 0;
+      top: 0;
+  }
+  
+  .TOP_Button{
+    background-color:transparent;
+    border: 0;
+    display:flex;
+    position:fixed;
+    left:1850px;
+    top:500px;
+    cursor: pointer;
+  }
+  
+  .TOP {    
+    width: 40px;
+    height: 40px;
+  }
+  
+  .Side_Button{
+    background-color:transparent;
+     border: 0;
+    display:flex;
+    position:absolute;
+    top:500px;
+    cursor: pointer;
+  }
+  .Side_text{
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+  }

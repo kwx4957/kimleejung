@@ -1,16 +1,21 @@
 import './Login.css';
-import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const REST_API_KEY = "2bfe8ae0660ba533d909f87f234194bb";
-    const REDIRECT_URI = "http://localhost:3000";
-    const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+    const REDIRECT_URI = "http://localhost:3000/user";
+
+    const REST_API_KEY_KAKAO = "2bfe8ae0660ba533d909f87f234194bb";
+    const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY_KAKAO}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+
+    const NAVER_AUTH_URL ='https://apis.worksmobile.com/{oLAu1GlBdKO6bRxivhQ2}/mail/sendMail';
     
-    const navigate = useNavigate();
     const onKakao = (e) => {
         e.preventDefault();
         window.location.replace(KAKAO_AUTH_URL);
     }    
+    const onNaver = (e) => {
+        e.preventDefault();
+        window.location.replace(NAVER_AUTH_URL);
+    }  
 
     return (
         <>
@@ -18,9 +23,7 @@ const Login = () => {
             <div> 
                 <button className="Home">
                 <a href='http://localhost:3000'>
-                    <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'>
-                        {/* <a href='http://localhost:3000'/> */}
-                    </img>
+                    <img src="kimleejung_logo.png"  className="divi-logo" alt='logo'/>
                 </a>
                 </button>
             </div>
@@ -31,24 +34,19 @@ const Login = () => {
                 <div class="sns_list">
                     <ul>
                         {/*네이버*/}
-                        <button className="Naver_Button">r
-                            <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&
-svctype=0&
-client_id=oLAu1GlBdKO6bRxivhQ2&
-redirect_uri=http://localhost:3000/&
-state=4ohD4Popsj5URbo3AQxvG4m30DpB0l3JZN3GEJXxcmQ_XNz4dce2A5TPUGh5SSvWbMfR9VIJvIlCWDFrU9E9n27U92qXDubFzi7vpSQcHxbTMV9TYT5EuSNlVcB3sAour4JLsQRIdb6kNAt11B27rkqC
-">
-                                <span class="logo">
-                                    <img src="naver_long.png" alt="네이버"/>
-                                </span>
-                            </a><br/>
+                        <button className="Naver_Button"  onClick={onNaver}>
+                            <span class="logo">
+                                <img src="naver_long.png" alt="네이버"/>
+                            </span><br/>
                         </button>
+
                         {/*카카오*/}
                         <button className="Kakao_Button" onClick={onKakao}>
                             <span class="logo">
                                  <img src="kakao_long.png" alt="카카오톡"/>
                             </span><br/>
                         </button>
+
                         {/*구글*/}
                         <button className="Gooogle_Button">
                             <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=profile%20email&response_type=code
